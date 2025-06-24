@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: glyph-codex
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn codex_app:app"
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.4

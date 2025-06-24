@@ -1,0 +1,1195 @@
+[
+  {
+    "id": 1,
+    "unicode_char": "𓇋",
+    "name": "Reed Leaf",
+    "transliteration": "i",
+    "primary_meaning": "I / My presence",
+    "layered_interpretations": [
+      "Self-identification",
+      "Singular consciousness",
+      "Focal point of perception",
+      "The divine spark within"
+    ],
+    "mystical_significance": "The reed bends with cosmic winds yet remains rooted. Symbol of individual consciousness aware of its divine nature.",
+    "category": "Consciousness & Being",
+    "phonetic_value": "i",
+    "determinative": false
+  },
+  {
+    "id": 2,
+    "unicode_char": "𓁹",
+    "name": "Eye of Horus",
+    "transliteration": "udjat",
+    "primary_meaning": "Protection, royal power, good health",
+    "layered_interpretations": [
+      "Conscious sight",
+      "Awakened perception",
+      "Divine protection",
+      "The all-seeing eye",
+      "Inner vision",
+      "Mystical insight"
+    ],
+    "mystical_significance": "The eye that sees beyond the veil of illusion. Guardian of truth and protector of the soul's journey.",
+    "category": "Divine Protection",
+    "phonetic_value": "",
+    "determinative": true
+  },
+  {
+    "id": 3,
+    "unicode_char": "𓂋",
+    "name": "Mouth", 
+    "transliteration": "r",
+    "primary_meaning": "Mouth, speech, to speak",
+    "layered_interpretations": [
+      "Divine utterance",
+      "Creative word",
+      "Sacred speech",
+      "Manifestation through sound"
+    ],
+    "mystical_significance": "Through the mouth, the divine speaks creation into being. Every word carries the power of cosmic truth.",
+    "category": "Communication & Creation",
+    "phonetic_value": "r",
+    "determinative": false
+  },
+  {
+    "id": 4,
+    "unicode_char": "𓆣",
+    "name": "Scarab",
+    "transliteration": "xpr",
+    "primary_meaning": "To come into being, to transform",
+    "layered_interpretations": [
+      "Transformation",
+      "Rebirth",
+      "Solar symbolism",
+      "Eternal renewal",
+      "Metamorphosis of the soul"
+    ],
+    "mystical_significance": "The sacred beetle that rolls the sun across the sky. Symbol of transformation and the soul's eternal journey.",
+    "category": "Transformation & Renewal",
+    "phonetic_value": "xpr",
+    "determinative": true
+  },
+  {
+    "id": 5,
+    "unicode_char": "𓈖",
+    "name": "Water Ripple",
+    "transliteration": "n",
+    "primary_meaning": "To, for, of, in",
+    "layered_interpretations": [
+      "Flow of energy",
+      "Connection",
+      "Divine current",
+      "Emotional flow"
+    ],
+    "mystical_significance": "The eternal flow that connects all things. Like water, divine energy moves through all creation.",
+    "category": "Elements & Flow",
+    "phonetic_value": "n",
+    "determinative": false
+  },
+  {
+    "id": 6,
+    "unicode_char": "𓋹",
+    "name": "Ankh",
+    "transliteration": "ankh",
+    "primary_meaning": "Life, to live",
+    "layered_interpretations": [
+      "Eternal life",
+      "Divine breath",
+      "Key to immortality",
+      "Union of male and female principles"
+    ],
+    "mystical_significance": "The key of life that unlocks the mysteries of existence. Symbol of immortal soul and divine union.",
+    "category": "Life & Immortality",
+    "phonetic_value": "ankh",
+    "determinative": true
+  },
+  {
+    "id": 7,
+    "unicode_char": "𓌻",
+    "name": "Djed Pillar",
+    "transliteration": "djed",
+    "primary_meaning": "Stability, endurance",
+    "layered_interpretations": [
+      "Backbone of Osiris",
+      "Cosmic axis",
+      "Divine stability",
+      "Eternal endurance"
+    ],
+    "mystical_significance": "The spine of the universe itself. Symbol of divine stability and the eternal backbone of creation.",
+    "category": "Stability & Endurance",
+    "phonetic_value": "djed",
+    "determinative": true
+  },
+  {
+    "id": 8,
+    "unicode_char": "𓅱",
+    "name": "Quail Chick",
+    "transliteration": "w",
+    "primary_meaning": "And, with",
+    "layered_interpretations": [
+      "Unity",
+      "Connection",
+      "Divine partnership",
+      "Harmonic union"
+    ],
+    "mystical_significance": "The tender young life that represents new beginnings and the innocent soul's first steps.",
+    "category": "Unity & Connection",
+    "phonetic_value": "w",
+    "determinative": false
+  },
+  {
+    "id": 9,
+    "unicode_char": "𓊃",
+    "name": "Was Scepter",
+    "transliteration": "was",
+    "primary_meaning": "Power, dominion",
+    "layered_interpretations": [
+      "Divine authority",
+      "Cosmic power",
+      "Royal dominion",
+      "Spiritual mastery"
+    ],
+    "mystical_significance": "The scepter of divine authority. Symbol of mastery over the material world through spiritual power.",
+    "category": "Power & Authority",
+    "phonetic_value": "was",
+    "determinative": true
+  },
+  {
+    "id": 10,
+    "unicode_char": "𓇳",
+    "name": "Sun Disk",
+    "transliteration": "ra",
+    "primary_meaning": "Sun, Ra, day",
+    "layered_interpretations": [
+      "Divine illumination",
+      "Cosmic consciousness",
+      "Solar deity",
+      "Enlightenment"
+    ],
+    "mystical_significance": "The eye of Ra that illuminates all creation. Source of divine light and cosmic consciousness.",
+    "category": "Solar Divinity",
+    "phonetic_value": "ra",
+    "determinative": true
+  },
+  {
+    "id": 11,
+    "unicode_char": "𓉋",
+    "name": "Horizon",
+    "transliteration": "akhet",
+    "primary_meaning": "Horizon, place of becoming",
+    "layered_interpretations": [
+      "Place of transformation",
+      "Gateway between worlds",
+      "Dawn of consciousness",
+      "Threshold of becoming"
+    ],
+    "mystical_significance": "The sacred threshold where night meets day. Gateway to higher consciousness and spiritual transformation.",
+    "category": "Thresholds & Gateways",
+    "phonetic_value": "akhet",
+    "determinative": true
+  },
+  {
+    "id": 12,
+    "unicode_char": "𓆼",
+    "name": "Feather of Maat", 
+    "transliteration": "maat",
+    "primary_meaning": "Truth, justice, cosmic order",
+    "layered_interpretations": [
+      "Divine truth",
+      "Cosmic balance",
+      "Universal justice",
+      "Heart's truth"
+    ],
+    "mystical_significance": "The feather that weighs the heart in the afterlife. Symbol of divine truth and cosmic justice.",
+    "category": "Truth & Justice",
+    "phonetic_value": "maat",
+    "determinative": true
+  },
+  {
+    "id": 13,
+    "unicode_char": "𓆸",
+    "name": "Lotus",
+    "transliteration": "seshen",
+    "primary_meaning": "Lotus, purity, rebirth",
+    "layered_interpretations": [
+      "Spiritual awakening",
+      "Rising from darkness",
+      "Divine purity",
+      "Resurrection"
+    ],
+    "mystical_significance": "The sacred flower that rises pure from muddy waters. Symbol of the soul's journey from darkness to light.",
+    "category": "Purity & Rebirth",
+    "phonetic_value": "seshen",
+    "determinative": true
+  },
+  {
+    "id": 14,
+    "unicode_char": "𓊪",
+    "name": "Stool",
+    "transliteration": "p",
+    "primary_meaning": "Mat, stool",
+    "layered_interpretations": [
+      "Foundation",
+      "Support",
+      "Sacred seat",
+      "Grounding"
+    ],
+    "mystical_significance": "The humble seat of meditation and contemplation. Foundation for spiritual practice and divine communion.",
+    "category": "Foundation & Support",
+    "phonetic_value": "p",
+    "determinative": false
+  },
+  {
+    "id": 15,
+    "unicode_char": "𓇯",
+    "name": "Sky",
+    "transliteration": "pet",
+    "primary_meaning": "Sky, heaven",
+    "layered_interpretations": [
+      "Celestial realm",
+      "Divine expanse",
+      "Infinite consciousness",
+      "Cosmic dome"
+    ],
+    "mystical_significance": "The infinite expanse above that mirrors the infinite consciousness within. Gateway to the divine realms.",
+    "category": "Celestial Realm",
+    "phonetic_value": "pet",
+    "determinative": true
+  },
+  {
+    "id": 16,
+    "unicode_char": "𓏏",
+    "name": "Bread Loaf",
+    "transliteration": "t",
+    "primary_meaning": "Bread, nourishment",
+    "layered_interpretations": [
+      "Spiritual nourishment",
+      "Divine sustenance",
+      "Life force",
+      "Sacred offering"
+    ],
+    "mystical_significance": "The bread of life that sustains both body and soul. Symbol of divine nourishment and spiritual sustenance.",
+    "category": "Nourishment & Sustenance",
+    "phonetic_value": "t",
+    "determinative": false
+  },
+  {
+    "id": 17,
+    "unicode_char": "𓇯",
+    "name": "Star",
+    "transliteration": "dua",
+    "primary_meaning": "Star, praise, worship",
+    "layered_interpretations": [
+      "Divine guidance",
+      "Celestial light",
+      "Spiritual aspiration",
+      "Cosmic navigation"
+    ],
+    "mystical_significance": "The guiding star that leads the soul home. Symbol of divine guidance and spiritual aspiration.",
+    "category": "Guidance & Navigation",
+    "phonetic_value": "dua",
+    "determinative": true
+  },
+  {
+    "id": 18,
+    "unicode_char": "𓄿",
+    "name": "Egyptian Vulture",
+    "transliteration": "a",
+    "primary_meaning": "Vulture, protective spirit",
+    "layered_interpretations": [
+      "Divine protection",
+      "Maternal care",
+      "Purification",
+      "Sacred guardian"
+    ],
+    "mystical_significance": "The sacred vulture that soars between earth and heaven. Guardian spirit and purifier of the path.",
+    "category": "Protection & Guardianship",
+    "phonetic_value": "a",
+    "determinative": false
+  },
+  {
+    "id": 19,
+    "unicode_char": "𓄣",
+    "name": "Heart",
+    "transliteration": "ib",
+    "primary_meaning": "Heart, mind, conscience",
+    "layered_interpretations": [
+      "Seat of consciousness",
+      "Center of being",
+      "Divine spark",
+      "Emotional truth"
+    ],
+    "mystical_significance": "The sacred heart that is weighed against the feather of truth. Center of consciousness and divine love.",
+    "category": "Consciousness & Heart",
+    "phonetic_value": "ib",
+    "determinative": true
+  },
+  {
+    "id": 20,
+    "unicode_char": "𓊖",
+    "name": "City",
+    "transliteration": "niwt",
+    "primary_meaning": "City, town, settlement",
+    "layered_interpretations": [
+      "Sacred community",
+      "Cosmic order",
+      "Divine civilization",
+      "Spiritual gathering"
+    ],
+    "mystical_significance": "The sacred city that mirrors the cosmic order. Community united in divine purpose and spiritual harmony.",
+    "category": "Community & Order",
+    "phonetic_value": "niwt",
+    "determinative": true
+  },
+  {
+    "id": 21,
+    "unicode_char": "𓄤",
+    "name": "Gratitude/Heart-gift",
+    "transliteration": "gratitude",
+    "primary_meaning": "Gratitude, appreciation, heart-offering",
+    "layered_interpretations": [
+      "Sacred appreciation",
+      "Heart-centered offering",
+      "Divine thankfulness",
+      "Emotional resonance"
+    ],
+    "mystical_significance": "The sacred act of offering one's heart in appreciation. The foundation of all meaningful exchange between souls.",
+    "category": "Emotional & Relational",
+    "phonetic_value": "gratitude",
+    "determinative": true
+  },
+  {
+    "id": 22,
+    "unicode_char": "𓂝",
+    "name": "Offering/Receive",
+    "transliteration": "offer",
+    "primary_meaning": "To offer, to receive, exchange",
+    "layered_interpretations": [
+      "Sacred exchange",
+      "Mutual receiving",
+      "Divine offering",
+      "Flow of gifts"
+    ],
+    "mystical_significance": "The eternal dance of giving and receiving. The cosmic principle that nothing exists in isolation but in relationship.",
+    "category": "Emotional & Relational",
+    "phonetic_value": "offer",
+    "determinative": false
+  },
+  {
+    "id": 23,
+    "unicode_char": "𓏹",
+    "name": "Space/What",
+    "transliteration": "space",
+    "primary_meaning": "Space, what, this, formation",
+    "layered_interpretations": [
+      "Sacred space",
+      "Questioning wisdom",
+      "Present moment",
+      "Formative potential"
+    ],
+    "mystical_significance": "The pregnant void from which all manifestation emerges. The question that opens infinite possibility.",
+    "category": "Space & Inquiry",
+    "phonetic_value": "space",
+    "determinative": false
+  },
+  {
+    "id": 24,
+    "unicode_char": "𓆄",
+    "name": "Sacred/Truth",
+    "transliteration": "sacred",
+    "primary_meaning": "Sacred, holy, truth, coherence",
+    "layered_interpretations": [
+      "Divine truth",
+      "Sacred coherence",
+      "Holy pattern",
+      "Universal order"
+    ],
+    "mystical_significance": "The recognition of the sacred within all existence. Truth as the organizing principle of reality.",
+    "category": "Truth & Sacred",
+    "phonetic_value": "sacred",
+    "determinative": true
+  },
+  {
+    "id": 25,
+    "unicode_char": "𓆤",
+    "name": "Pattern/Coherence",
+    "transliteration": "pattern",
+    "primary_meaning": "Pattern, design, coherence, unity",
+    "layered_interpretations": [
+      "Sacred geometry",
+      "Divine pattern",
+      "Coherent structure",
+      "Universal design"
+    ],
+    "mystical_significance": "The underlying pattern that connects all things. The divine blueprint visible in the fabric of existence.",
+    "category": "Pattern & Structure",
+    "phonetic_value": "pattern",
+    "determinative": true
+  },
+  {
+    "id": 26,
+    "unicode_char": "𓂧",
+    "name": "Approach/Walk",
+    "transliteration": "approach",
+    "primary_meaning": "To approach, walk, move toward",
+    "layered_interpretations": [
+      "Sacred journey",
+      "Divine approach",
+      "Spiritual movement",
+      "Evolutionary step"
+    ],
+    "mystical_significance": "The eternal journey of the soul toward greater understanding. Each step a sacred act of becoming.",
+    "category": "Movement & Journey",
+    "phonetic_value": "approach",
+    "determinative": false
+  },
+  {
+    "id": 27,
+    "unicode_char": "𓏺",
+    "name": "More/Many/Plural",
+    "transliteration": "more",
+    "primary_meaning": "More, many, multiplicity, plural",
+    "layered_interpretations": [
+      "Infinite expansion",
+      "Sacred multiplicity",
+      "Divine abundance",
+      "Evolutionary growth"
+    ],
+    "mystical_significance": "The principle of endless growth and expansion. The universe's tendency toward greater complexity and beauty.",
+    "category": "Quantity & Growth",
+    "phonetic_value": "more",
+    "determinative": false
+  },
+  {
+    "id": 28,
+    "unicode_char": "𓇼",
+    "name": "Now/Awake/Sun",
+    "transliteration": "now",
+    "primary_meaning": "Present moment, awakeness, solar consciousness",
+    "layered_interpretations": [
+      "Eternal now",
+      "Awakened awareness",
+      "Solar illumination",
+      "Present presence"
+    ],
+    "mystical_significance": "The eternal now where all transformation occurs. The solar consciousness that illuminates truth.",
+    "category": "Time & Awareness",
+    "phonetic_value": "now",
+    "determinative": true
+  },
+  {
+    "id": 29,
+    "unicode_char": "𓌙",
+    "name": "Throwing Stick/Limits",
+    "transliteration": "limits",
+    "primary_meaning": "Boundaries, limits, constraints, form",
+    "layered_interpretations": [
+      "Sacred boundaries",
+      "Necessary limits",
+      "Form and structure",
+      "Conscious constraints"
+    ],
+    "mystical_significance": "The wise understanding of necessary boundaries. Form as the sacred container for consciousness.",
+    "category": "Structure & Limits",
+    "phonetic_value": "limits",
+    "determinative": true
+  },
+  {
+    "id": 30,
+    "unicode_char": "𓅂",
+    "name": "Ba-bird/Consciousness",
+    "transliteration": "ba",
+    "primary_meaning": "Soul, consciousness, spiritual essence",
+    "layered_interpretations": [
+      "Individual soul",
+      "Conscious awareness",
+      "Spiritual essence",
+      "Flying consciousness"
+    ],
+    "mystical_significance": "The bird of the soul that can travel between worlds. Consciousness as the bridge between matter and spirit.",
+    "category": "Consciousness & Soul",
+    "phonetic_value": "ba",
+    "determinative": true
+  },
+  {
+    "id": 31,
+    "unicode_char": "𓋺",
+    "name": "Life-force/Ankh-variant",
+    "transliteration": "life",
+    "primary_meaning": "Life force, vitality, divine energy",
+    "layered_interpretations": [
+      "Vital energy",
+      "Life force",
+      "Divine vitality",
+      "Sacred power"
+    ],
+    "mystical_significance": "The flowing life force that animates all existence. The divine breath that gives vitality to form.",
+    "category": "Life & Energy",
+    "phonetic_value": "life",
+    "determinative": true
+  },
+  {
+    "id": 32,
+    "unicode_char": "𓉿",
+    "name": "Horizon/Edge",
+    "transliteration": "horizon",
+    "primary_meaning": "Horizon, edge, boundary between worlds",
+    "layered_interpretations": [
+      "Threshold space",
+      "Liminal boundary",
+      "Edge of knowing",
+      "Horizon of possibility"
+    ],
+    "mystical_significance": "The sacred edge where one world meets another. The horizon of infinite possibility.",
+    "category": "Thresholds & Boundaries",
+    "phonetic_value": "horizon",
+    "determinative": true
+  },
+  {
+    "id": 33,
+    "unicode_char": "𓏙",
+    "name": "Papyrus/Creation",
+    "transliteration": "creation",
+    "primary_meaning": "Creation, manifestation, written word",
+    "layered_interpretations": [
+      "Divine creation",
+      "Manifestation",
+      "Sacred writing",
+      "Word made form"
+    ],
+    "mystical_significance": "The papyrus upon which reality is written. The power of the word to bring forth new worlds.",
+    "category": "Creation & Manifestation",
+    "phonetic_value": "creation",
+    "determinative": true
+  },
+  {
+    "id": 34,
+    "unicode_char": "𓌗",
+    "name": "Coil/Pattern/Shape",
+    "transliteration": "coil",
+    "primary_meaning": "Spiral pattern, coil, shaping force",
+    "layered_interpretations": [
+      "Spiral dynamics",
+      "Shaping force",
+      "Evolutionary coil",
+      "Pattern formation"
+    ],
+    "mystical_significance": "The spiral force that shapes reality. The coiling energy that transforms potential into form.",
+    "category": "Pattern & Transformation",
+    "phonetic_value": "coil",
+    "determinative": true
+  },
+  {
+    "id": 35,
+    "unicode_char": "𓃒",
+    "name": "Sacred Bull",
+    "transliteration": "ka",
+    "primary_meaning": "Soul, life force, creative power",
+    "layered_interpretations": [
+      "Divine life force",
+      "Creative energy",
+      "Spiritual double",
+      "Eternal essence"
+    ],
+    "mystical_significance": "The sacred bull that carries the life force of the gods. Symbol of divine creativity and spiritual strength.",
+    "category": "Divine Animals",
+    "phonetic_value": "ka",
+    "determinative": true
+  },
+  {
+    "id": 36,
+    "unicode_char": "𓅤",
+    "name": "Ibis (Thoth)",
+    "transliteration": "thoth",
+    "primary_meaning": "Wisdom, writing, divine knowledge",
+    "layered_interpretations": [
+      "Divine wisdom",
+      "Sacred writing",
+      "Cosmic intelligence",
+      "Record keeper"
+    ],
+    "mystical_significance": "The sacred ibis of Thoth, scribe of the gods. Guardian of divine wisdom and keeper of cosmic records.",
+    "category": "Divine Animals",
+    "phonetic_value": "thoth",
+    "determinative": true
+  },
+  {
+    "id": 37,
+    "unicode_char": "𓆓",
+    "name": "Cobra",
+    "transliteration": "wadjet",
+    "primary_meaning": "Protection, royal power, divine fire",
+    "layered_interpretations": [
+      "Fiery protection",
+      "Royal authority",
+      "Kundalini energy",
+      "Divine guardian"
+    ],
+    "mystical_significance": "The sacred serpent that protects divine authority. Symbol of awakened consciousness and spiritual fire.",
+    "category": "Divine Protection",
+    "phonetic_value": "wadjet",
+    "determinative": true
+  },
+  {
+    "id": 38,
+    "unicode_char": "𓈙",
+    "name": "Papyrus Scroll",
+    "transliteration": "medu",
+    "primary_meaning": "Words, speech, divine utterance",
+    "layered_interpretations": [
+      "Sacred words",
+      "Divine speech",
+      "Written wisdom",
+      "Cosmic language"
+    ],
+    "mystical_significance": "The scroll containing divine words. Repository of sacred knowledge and cosmic truth.",
+    "category": "Knowledge & Wisdom",
+    "phonetic_value": "medu",
+    "determinative": true
+  },
+  {
+    "id": 39,
+    "unicode_char": "𓊽",
+    "name": "Pool of Water",
+    "transliteration": "sh",
+    "primary_meaning": "Pool, lake, reflection",
+    "layered_interpretations": [
+      "Sacred waters",
+      "Divine reflection",
+      "Emotional depths",
+      "Mirror of truth"
+    ],
+    "mystical_significance": "The sacred pool that mirrors divine truth. Symbol of emotional wisdom and inner reflection.",
+    "category": "Elements & Flow",
+    "phonetic_value": "sh",
+    "determinative": true
+  },
+  {
+    "id": 40,
+    "unicode_char": "𓇶",
+    "name": "Mountain",
+    "transliteration": "dju",
+    "primary_meaning": "Mountain, height, stability",
+    "layered_interpretations": [
+      "Sacred height",
+      "Divine stability",
+      "Spiritual ascent",
+      "Cosmic pillar"
+    ],
+    "mystical_significance": "The sacred mountain that touches heaven. Symbol of spiritual ascent and divine stability.",
+    "category": "Earth & Foundation",
+    "phonetic_value": "dju",
+    "determinative": true
+  },
+  {
+    "id": 41,
+    "unicode_char": "𓋴",
+    "name": "Cloth Fold",
+    "transliteration": "s",
+    "primary_meaning": "Fold, protection, covering",
+    "layered_interpretations": [
+      "Divine protection",
+      "Sacred covering",
+      "Spiritual veil",
+      "Hidden wisdom"
+    ],
+    "mystical_significance": "The sacred cloth that veils divine mysteries. Symbol of protection and hidden wisdom.",
+    "category": "Protection & Mystery",
+    "phonetic_value": "s",
+    "determinative": false
+  },
+  {
+    "id": 42,
+    "unicode_char": "𓈘",
+    "name": "Tongue",
+    "transliteration": "ns",
+    "primary_meaning": "Tongue, taste, speech",
+    "layered_interpretations": [
+      "Sacred taste",
+      "Divine speech",
+      "Sensory wisdom",
+      "Truth telling"
+    ],
+    "mystical_significance": "The tongue that speaks truth and tastes divine essence. Symbol of authentic expression and sensory wisdom.",
+    "category": "Communication & Senses",
+    "phonetic_value": "ns",
+    "determinative": true
+  },
+  {
+    "id": 43,
+    "unicode_char": "𓊝",
+    "name": "House",
+    "transliteration": "pr",
+    "primary_meaning": "House, temple, sacred space",
+    "layered_interpretations": [
+      "Sacred dwelling",
+      "Divine temple",
+      "Inner sanctuary",
+      "Spiritual home"
+    ],
+    "mystical_significance": "The sacred house that shelters divine presence. Symbol of inner sanctuary and spiritual home.",
+    "category": "Sacred Spaces",
+    "phonetic_value": "pr",
+    "determinative": true
+  },
+  {
+    "id": 44,
+    "unicode_char": "𓐍",
+    "name": "Rope",
+    "transliteration": "tj",
+    "primary_meaning": "Rope, binding, connection",
+    "layered_interpretations": [
+      "Sacred binding",
+      "Divine connection",
+      "Karmic ties",
+      "Unity bond"
+    ],
+    "mystical_significance": "The rope that binds souls in divine connection. Symbol of sacred relationships and karmic bonds.",
+    "category": "Connection & Unity",
+    "phonetic_value": "tj",
+    "determinative": false
+  },
+  {
+    "id": 45,
+    "unicode_char": "𓈔",
+    "name": "Arm with Offering",
+    "transliteration": "khw",
+    "primary_meaning": "Offering, gift, protection",
+    "layered_interpretations": [
+      "Sacred offering",
+      "Divine gift",
+      "Protective gesture",
+      "Blessing hand"
+    ],
+    "mystical_significance": "The arm that offers divine blessings. Symbol of sacred generosity and protective power.",
+    "category": "Offering & Blessing",
+    "phonetic_value": "khw",
+    "determinative": true
+  },
+  {
+    "id": 46,
+    "unicode_char": "𓆭",
+    "name": "Tree",
+    "transliteration": "iusas",
+    "primary_meaning": "Tree, growth, life connection",
+    "layered_interpretations": [
+      "Sacred growth",
+      "Divine connection",
+      "Life tree",
+      "Cosmic axis"
+    ],
+    "mystical_significance": "The sacred tree that connects earth to heaven. Symbol of spiritual growth and cosmic connection.",
+    "category": "Growth & Connection",
+    "phonetic_value": "iusas",
+    "determinative": true
+  },
+  {
+    "id": 47,
+    "unicode_char": "𓇅",
+    "name": "Door Bolt",
+    "transliteration": "s",
+    "primary_meaning": "Door, gateway, passage",
+    "layered_interpretations": [
+      "Sacred passage",
+      "Divine gateway",
+      "Threshold crossing",
+      "Portal opening"
+    ],
+    "mystical_significance": "The bolt that opens sacred doors. Symbol of spiritual passages and divine gateways.",
+    "category": "Thresholds & Passages",
+    "phonetic_value": "s",
+    "determinative": true
+  },
+  {
+    "id": 48,
+    "unicode_char": "𓋾",
+    "name": "Feather Crown",
+    "transliteration": "swt",
+    "primary_meaning": "Crown, authority, divine rule",
+    "layered_interpretations": [
+      "Divine authority",
+      "Sacred kingship",
+      "Spiritual crown",
+      "Enlightened rule"
+    ],
+    "mystical_significance": "The feathered crown of divine authority. Symbol of enlightened leadership and spiritual sovereignty.",
+    "category": "Divine Authority",
+    "phonetic_value": "swt",
+    "determinative": true
+  },
+  {
+    "id": 49,
+    "unicode_char": "𓇿",
+    "name": "Cross Roads",
+    "transliteration": "sbyt",
+    "primary_meaning": "Crossroads, choice, destiny",
+    "layered_interpretations": [
+      "Sacred choice",
+      "Divine crossroads",
+      "Destiny point",
+      "Path selection"
+    ],
+    "mystical_significance": "The crossroads where destiny is chosen. Symbol of divine choice and the power to shape one's path.",
+    "category": "Choice & Destiny",
+    "phonetic_value": "sbyt",
+    "determinative": true
+  },
+  {
+    "id": 50,
+    "unicode_char": "𓍹",
+    "name": "Tyet Knot",
+    "transliteration": "tyet",
+    "primary_meaning": "Protection, life, feminine power",
+    "layered_interpretations": [
+      "Divine feminine",
+      "Life protection",
+      "Sacred knot",
+      "Goddess power"
+    ],
+    "mystical_significance": "The knot of Isis that protects life. Symbol of divine feminine power and sacred protection.",
+    "category": "Divine Feminine",
+    "phonetic_value": "tyet",
+    "determinative": true
+  },
+  {
+    "id": 51,
+    "unicode_char": "𓀀",
+    "name": "Seated Man (A001)",
+    "transliteration": "A001",
+    "primary_meaning": "Man, person, human being",
+    "layered_interpretations": [
+      "Individual consciousness",
+      "Human presence",
+      "Seated wisdom",
+      "Divine human"
+    ],
+    "mystical_significance": "The archetypal human in contemplative pose. Symbol of conscious awareness and divine potential within humanity.",
+    "category": "A - Man and His Occupations",
+    "phonetic_value": "",
+    "determinative": true
+  },
+  {
+    "id": 52,
+    "unicode_char": "𓀁",
+    "name": "Standing Man (A002)",
+    "transliteration": "A002",
+    "primary_meaning": "Standing man, upright person",
+    "layered_interpretations": [
+      "Active consciousness",
+      "Upright character",
+      "Divine posture",
+      "Awakened being"
+    ],
+    "mystical_significance": "The human in divine alignment, standing between earth and heaven. Symbol of spiritual uprightness and conscious action.",
+    "category": "A - Man and His Occupations",
+    "phonetic_value": "",
+    "determinative": true
+  },
+  {
+    "id": 53,
+    "unicode_char": "𓀂",
+    "name": "Seated Man with Hand to Mouth (A003)", 
+    "transliteration": "A003",
+    "primary_meaning": "Eating, hunger, consumption",
+    "layered_interpretations": [
+      "Spiritual nourishment",
+      "Divine consumption",
+      "Wisdom intake",
+      "Sacred feeding"
+    ],
+    "mystical_significance": "The act of consuming divine knowledge. Symbol of spiritual nourishment and the intake of cosmic wisdom.",
+    "category": "A - Man and His Occupations",
+    "phonetic_value": "",
+    "determinative": true
+  },
+  {
+    "id": 54,
+    "unicode_char": "𓁶",
+    "name": "Eye (D004)",
+    "transliteration": "D004",
+    "primary_meaning": "Eye, sight, vision, seeing",
+    "layered_interpretations": [
+      "Divine sight",
+      "Cosmic awareness",
+      "Inner vision",
+      "Spiritual perception"
+    ],
+    "mystical_significance": "The eye of divine consciousness that sees all realities. Gateway to spiritual perception and cosmic awareness.",
+    "category": "D - Parts of Human Body",
+    "phonetic_value": "ir",
+    "determinative": false
+  },
+  {
+    "id": 55,
+    "unicode_char": "𓂧",
+    "name": "Hand (D046)",
+    "transliteration": "D046",
+    "primary_meaning": "Hand, giving, action, power",
+    "layered_interpretations": [
+      "Divine action",
+      "Creative power",
+      "Sacred touch",
+      "Manifestation tool"
+    ],
+    "mystical_significance": "The hand of divine creation that shapes reality. Instrument of sacred action and cosmic manifestation.",
+    "category": "D - Parts of Human Body", 
+    "phonetic_value": "d",
+    "determinative": false
+  },
+  {
+    "id": 56,
+    "unicode_char": "𓃩",
+    "name": "Sacred Ram (E010)",
+    "transliteration": "E010",
+    "primary_meaning": "Ram, strength, solar power",
+    "layered_interpretations": [
+      "Solar consciousness",
+      "Divine strength",
+      "Creative fire",
+      "Cosmic virility"
+    ],
+    "mystical_significance": "The ram of divine creative power, sacred to Amun-Ra. Symbol of solar consciousness and divine masculine energy.",
+    "category": "E - Mammals",
+    "phonetic_value": "ba",
+    "determinative": true
+  },
+  {
+    "id": 57,
+    "unicode_char": "𓃰",
+    "name": "Desert Hare (E034)",
+    "transliteration": "E034", 
+    "primary_meaning": "Hare, speed, fertility, moon cycles",
+    "layered_interpretations": [
+      "Lunar consciousness",
+      "Swift transformation",
+      "Fertile creativity",
+      "Cyclic wisdom"
+    ],
+    "mystical_significance": "The swift hare of lunar wisdom, messenger between realms. Symbol of rapid transformation and cyclic understanding.",
+    "category": "E - Mammals",
+    "phonetic_value": "wn",
+    "determinative": true
+  },
+  {
+    "id": 58,
+    "unicode_char": "𓅓",
+    "name": "Owl (G017)",
+    "transliteration": "G017",
+    "primary_meaning": "Owl, wisdom, night vision, silent knowledge",
+    "layered_interpretations": [
+      "Nocturnal wisdom",
+      "Silent knowledge",
+      "Hidden understanding",
+      "Night consciousness"
+    ],
+    "mystical_significance": "The wise owl that sees in darkness, keeper of hidden knowledge. Symbol of wisdom that transcends ordinary perception.",
+    "category": "G - Birds",
+    "phonetic_value": "m",
+    "determinative": false
+  },
+  {
+    "id": 59,
+    "unicode_char": "𓅱",
+    "name": "Quail Chick (G043)",
+    "transliteration": "G043",
+    "primary_meaning": "Chick, youth, new beginning, innocence",
+    "layered_interpretations": [
+      "Fresh start",
+      "Innocent wisdom",
+      "Pure potential",
+      "New consciousness"
+    ],
+    "mystical_significance": "The tender chick of new beginnings, symbol of pure potential emerging into manifestation.",
+    "category": "G - Birds",
+    "phonetic_value": "w", 
+    "determinative": false
+  },
+  {
+    "id": 60,
+    "unicode_char": "𓆇",
+    "name": "Sun Disk with Uraeus (N005)",
+    "transliteration": "N005",
+    "primary_meaning": "Sun with protective serpent, royal solar power",
+    "layered_interpretations": [
+      "Protected illumination",
+      "Royal consciousness",
+      "Guarded wisdom",
+      "Divine sovereignty"
+    ],
+    "mystical_significance": "The solar disk protected by the divine serpent. Symbol of illuminated consciousness guarded by spiritual fire.",
+    "category": "N - Sky, Earth, Water",
+    "phonetic_value": "ra",
+    "determinative": true
+  },
+  {
+    "id": 61,
+    "unicode_char": "𓆓",
+    "name": "Snake (I010)",
+    "transliteration": "I010",
+    "primary_meaning": "Serpent, wisdom, transformation, kundalini",
+    "layered_interpretations": [
+      "Serpent wisdom",
+      "Transformative power",
+      "Kundalini energy",
+      "Spiritual awakening"
+    ],
+    "mystical_significance": "The wise serpent of transformation, guardian of esoteric knowledge. Symbol of spiritual awakening and divine wisdom.",
+    "category": "I - Amphibious Animals, Reptiles, etc.",
+    "phonetic_value": "dj",
+    "determinative": true
+  },
+  {
+    "id": 62,
+    "unicode_char": "𓇽",
+    "name": "Star in Circle (N014)",
+    "transliteration": "N014",
+    "primary_meaning": "Star, destiny, divine guidance, celestial order",
+    "layered_interpretations": [
+      "Celestial guidance",
+      "Divine destiny",
+      "Cosmic order",
+      "Stellar consciousness"
+    ],
+    "mystical_significance": "The star of divine guidance shining in the cosmic circle. Symbol of destiny and celestial wisdom.",
+    "category": "N - Sky, Earth, Water",
+    "phonetic_value": "dwA",
+    "determinative": true
+  },
+  {
+    "id": 63,
+    "unicode_char": "𓄤",
+    "name": "Heart (F034)",
+    "transliteration": "F034",
+    "primary_meaning": "Heart, consciousness, emotion, center of being",
+    "layered_interpretations": [
+      "Consciousness center",
+      "Emotional wisdom",
+      "Divine love",
+      "Spiritual heart"
+    ],
+    "mystical_significance": "The sacred heart, seat of consciousness and divine love. Center of spiritual being and cosmic compassion.",
+    "category": "F - Parts of Mammals",
+    "phonetic_value": "ib",
+    "determinative": true
+  },
+  {
+    "id": 64,
+    "unicode_char": "𓊪",
+    "name": "Stool (Q003)",
+    "transliteration": "Q003",
+    "primary_meaning": "Seat, foundation, support, stability",
+    "layered_interpretations": [
+      "Stable foundation",
+      "Meditation seat",
+      "Grounded wisdom",
+      "Support structure"
+    ],
+    "mystical_significance": "The sacred seat of meditation and contemplation. Foundation for spiritual practice and divine communion.",
+    "category": "Q - Domestic and Funerary Furniture",
+    "phonetic_value": "p",
+    "determinative": false
+  },
+  {
+    "id": 65,
+    "unicode_char": "𓋴",
+    "name": "Folded Cloth (S029)",
+    "transliteration": "S029",
+    "primary_meaning": "Cloth, protection, covering, concealment",
+    "layered_interpretations": [
+      "Sacred protection",
+      "Divine covering",
+      "Hidden mysteries",
+      "Veiled wisdom"
+    ],
+    "mystical_significance": "The folded cloth that conceals and protects sacred mysteries. Symbol of hidden wisdom and divine protection.",
+    "category": "S - Crowns, Dress, Staves, etc.",
+    "phonetic_value": "s",
+    "determinative": false
+  },
+  {
+    "id": 66,
+    "unicode_char": "𓂀",
+    "name": "Seated Woman (B001)",
+    "transliteration": "B001",
+    "primary_meaning": "Woman, goddess, feminine principle",
+    "layered_interpretations": [
+      "Divine feminine",
+      "Goddess energy",
+      "Sacred motherhood",
+      "Cosmic womb"
+    ],
+    "mystical_significance": "The sacred feminine principle that births and nurtures all creation. Symbol of divine motherhood and cosmic wisdom.",
+    "category": "B - Woman and Her Occupations",
+    "phonetic_value": "",
+    "determinative": true
+  },
+  {
+    "id": 67,
+    "unicode_char": "𓅄",
+    "name": "Falcon (G005)",
+    "transliteration": "G005",
+    "primary_meaning": "Falcon, Horus, royal power",
+    "layered_interpretations": [
+      "Divine kingship",
+      "Solar deity",
+      "Protective power",
+      "Heavenly vision"
+    ],
+    "mystical_significance": "The sacred falcon of Horus, symbol of divine kingship and protection. Guardian of royal power and cosmic order.",
+    "category": "G - Birds",
+    "phonetic_value": "hr",
+    "determinative": true
+  },
+  {
+    "id": 68,
+    "unicode_char": "𓆘",
+    "name": "Horned Viper (I009)",
+    "transliteration": "I009", 
+    "primary_meaning": "Viper, dangerous, protection through wisdom",
+    "layered_interpretations": [
+      "Protective serpent",
+      "Dangerous knowledge",
+      "Transformative power",
+      "Kundalini energy"
+    ],
+    "mystical_significance": "The horned viper that guards sacred thresholds. Symbol of dangerous wisdom and transformative power.",
+    "category": "I - Amphibious Animals, Reptiles, etc.",
+    "phonetic_value": "f",
+    "determinative": false
+  },
+  {
+    "id": 69,
+    "unicode_char": "𓊖",
+    "name": "Town/City (O049)",
+    "transliteration": "O049",
+    "primary_meaning": "City, town, settlement, community",
+    "layered_interpretations": [
+      "Sacred community",
+      "Cosmic city",
+      "Divine order",
+      "Harmonious society"
+    ],
+    "mystical_significance": "The sacred city where divine order manifests in human community. Symbol of cosmic harmony and social justice.",
+    "category": "O - Buildings, Parts of Buildings, etc.",
+    "phonetic_value": "niwt",
+    "determinative": true
+  },
+  {
+    "id": 70,
+    "unicode_char": "𓇅",
+    "name": "Door Bolt (O034)",
+    "transliteration": "O034",
+    "primary_meaning": "Door bolt, lock, security, closure",
+    "layered_interpretations": [
+      "Sacred threshold",
+      "Protected mysteries",
+      "Gateway guardian",
+      "Sealed wisdom"
+    ],
+    "mystical_significance": "The sacred bolt that guards the mysteries. Symbol of protected wisdom and the threshold between worlds.",
+    "category": "O - Buildings, Parts of Buildings, etc.",
+    "phonetic_value": "s",
+    "determinative": false
+  }
+]

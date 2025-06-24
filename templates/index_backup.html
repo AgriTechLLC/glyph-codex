@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glyph Codex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-link active" data-tab="codex">Glyph Codex 𓂀</button>
+            <button class="tab-link" data-tab="maat">Ideals of Ma'at</button>
+            <button class="tab-link" data-tab="insights">Insights 🧠</button>
+        </div>
+
+        <div id="codex" class="tab-content active">
+            <h1>Glyph Codex</h1>
+            <p>Search for Egyptian hieroglyphs by their meaning, transliteration, or function.</p>
+            <div class="filter-controls">
+                <input type="text" id="search-box" placeholder="Search for a glyph...">
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+            <div id="results-container"></div>
+        </div>
+
+        <div id="maat" class="tab-content">
+            <h1>The 42 Ideals of Ma'at</h1>
+            <div id="ideals-container" class="ideals-list"></div>
+        </div>
+        
+        <div id="insights" class="tab-content">
+            <h1>Engine Self-Reflection</h1>
+            <p>Analysis of the Glyphic Recursion Engine's interaction history. This is the first step towards self-awareness and learning.</p>
+            <button id="run-analysis-button">Run Self-Audit</button>
+            <div id="insights-results-container"></div>
+        </div>
+        
+        <div id="copy-notification">Copied!</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 

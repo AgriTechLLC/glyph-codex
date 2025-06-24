@@ -1,0 +1,967 @@
+/* Glyph Codex - Mystical Transcendental Design */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* Egyptian Hieroglyphs Font */
+@font-face {
+    font-family: 'Noto Sans Egyptian Hieroglyphs';
+    src: url('../NotoSansEgyptianHieroglyphs-Regular.ttf') format('truetype');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fallback Unifont for Extended Unicode */
+@font-face {
+    font-family: 'Unifont';
+    src: url('../unifont.otf') format('opentype');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Egyptian Hieroglyphs Text Class */
+.egyptian-hieroglyphs {
+    font-family: 'Noto Sans Egyptian Hieroglyphs', 'Unifont', serif;
+    font-feature-settings: "liga" off;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+:root {
+    /* Mystical Color Palette */
+    --cosmic-void: #0a0a1a;
+    --deep-purple: #1a0f2e;
+    --mystic-blue: #2d1b69;
+    --astral-indigo: #4a148c;
+    --divine-gold: #ffd700;
+    --sacred-amber: #ffb300;
+    --ethereal-silver: #e8eaf6;
+    --spirit-white: #ffffff;
+    --energy-cyan: #00e5ff;
+    --life-force: #7c4dff;
+    
+    /* Mystical Gradients */
+    --cosmic-bg: radial-gradient(ellipse at center, var(--deep-purple) 0%, var(--cosmic-void) 70%);
+    --divine-glow: 0 0 20px var(--divine-gold), 0 0 40px var(--divine-gold), 0 0 60px var(--divine-gold);
+    --astral-glow: 0 0 15px var(--energy-cyan), 0 0 30px var(--energy-cyan);
+    --void-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+    
+    /* Sacred Geometry */
+    --golden-ratio: 1.618;
+    --sacred-spacing: calc(1rem * var(--golden-ratio));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    background: var(--cosmic-bg);
+    color: var(--ethereal-silver);
+    line-height: var(--golden-ratio);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Cosmic Background Animation */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(124, 77, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(0, 229, 255, 0.05) 0%, transparent 50%);
+    animation: cosmicPulse 20s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -2;
+}
+
+/* Floating Sacred Symbols */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='50' font-size='20' fill='%23ffd700' opacity='0.1'%3E𓂀%3C/text%3E%3C/svg%3E"),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='50' font-size='15' fill='%237c4dff' opacity='0.08'%3E𓊨%3C/text%3E%3C/svg%3E");
+    background-size: 200px 200px, 150px 150px;
+    background-position: 0 0, 50px 50px;
+    animation: floatSymbols 60s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes cosmicPulse {
+    0%, 100% { opacity: 0.8; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes floatSymbols {
+    0% { transform: translateY(100vh) rotate(0deg); }
+    100% { transform: translateY(-100vh) rotate(360deg); }
+}
+
+/* Sacred Geometry Container */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--sacred-spacing);
+    position: relative;
+    z-index: 1;
+}
+
+/* Mystical Header */
+.header {
+    text-align: center;
+    margin-bottom: calc(var(--sacred-spacing) * 2);
+    padding: var(--sacred-spacing) 0;
+    position: relative;
+    border-bottom: 2px solid transparent;
+    background: linear-gradient(90deg, transparent, var(--divine-gold), transparent) bottom/100% 2px no-repeat;
+}
+
+.header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    background: linear-gradient(45deg, var(--divine-gold), var(--sacred-amber), var(--energy-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: var(--divine-glow);
+    animation: divineGlow 4s ease-in-out infinite alternate;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: var(--ethereal-silver);
+    opacity: 0.9;
+    font-style: italic;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes divineGlow {
+    0% { filter: drop-shadow(0 0 10px var(--divine-gold)); }
+    100% { filter: drop-shadow(0 0 25px var(--divine-gold)) drop-shadow(0 0 35px var(--sacred-amber)); }
+}
+
+/* Transcendental Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--sacred-spacing);
+    background: rgba(26, 15, 46, 0.6);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    padding: 8px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    box-shadow: var(--void-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.tabs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+    animation: energyFlow 3s linear infinite;
+}
+
+@keyframes energyFlow {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.tab-link {
+    flex: 1;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: var(--ethereal-silver);
+    border: none;
+    border-radius: 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.tab-link span {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+    animation: symbolPulse 2s ease-in-out infinite;
+    font-family: 'Noto Sans Egyptian Hieroglyphs', 'Unifont', serif;
+    font-feature-settings: "liga" off;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes symbolPulse {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
+}
+
+.tab-link:hover {
+    color: var(--divine-gold);
+    transform: translateY(-3px);
+    box-shadow: var(--divine-glow);
+}
+
+.tab-link.active {
+    background: linear-gradient(135deg, var(--mystic-blue), var(--astral-indigo));
+    color: var(--spirit-white);
+    box-shadow: var(--astral-glow);
+    transform: translateY(-2px);
+}
+
+/* Mystical Tab Content */
+.tab-content {
+    display: none;
+    animation: etherealFadeIn 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes etherealFadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(30px) scale(0.95);
+        filter: blur(10px);
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+/* Sacred Typography */
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background: linear-gradient(45deg, var(--divine-gold), var(--energy-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+}
+
+/* Divine Search Controls */
+.filter-controls {
+    display: flex;
+    gap: var(--sacred-spacing);
+    margin-bottom: var(--sacred-spacing);
+    flex-wrap: wrap;
+}
+
+.filter-controls input,
+.filter-controls select {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem 1.5rem;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 15px;
+    background: rgba(26, 15, 46, 0.7);
+    backdrop-filter: blur(15px);
+    color: var(--ethereal-silver);
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.filter-controls input:focus,
+.filter-controls select:focus {
+    outline: none;
+    border-color: var(--divine-gold);
+    box-shadow: var(--divine-glow), inset 0 2px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    background: rgba(26, 15, 46, 0.9);
+}
+
+.filter-controls input::placeholder {
+    color: rgba(232, 234, 246, 0.6);
+    font-style: italic;
+}
+
+/* Sacred Glyph Grid */
+#results-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: var(--sacred-spacing);
+    margin-top: var(--sacred-spacing);
+}
+
+/* Mystical Glyph Cards */
+.glyph-card {
+    background: linear-gradient(135deg, rgba(26, 15, 46, 0.8), rgba(45, 27, 105, 0.6));
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 20px;
+    padding: var(--sacred-spacing);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--void-shadow);
+}
+
+.glyph-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+    transition: left 0.8s ease;
+}
+
+.glyph-card:hover::before {
+    left: 100%;
+}
+
+.glyph-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: var(--divine-glow), var(--void-shadow);
+    border-color: var(--divine-gold);
+}
+
+.glyph-symbol {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--divine-gold);
+    text-shadow: var(--divine-glow);
+    font-family: 'Noto Sans Egyptian Hieroglyphs', 'Unifont', serif;
+    animation: glyphPulse 3s ease-in-out infinite;
+    position: relative;
+    font-feature-settings: "liga" off;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes glyphPulse {
+    0%, 100% { transform: scale(1); filter: brightness(1); }
+    50% { transform: scale(1.05); filter: brightness(1.2); }
+}
+
+.glyph-info h3 {
+    color: var(--divine-gold);
+    margin-bottom: 0.8rem;
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.glyph-info p {
+    margin-bottom: 0.6rem;
+    color: var(--ethereal-silver);
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.glyph-info strong {
+    color: var(--sacred-amber);
+    font-weight: 600;
+}
+
+/* Mystical Significance Display */
+.mystical-significance {
+    background: linear-gradient(135deg, rgba(124, 77, 255, 0.2), rgba(0, 229, 255, 0.1));
+    border-left: 3px solid var(--life-force);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    font-style: italic;
+    color: var(--energy-cyan);
+    box-shadow: inset 0 0 20px rgba(124, 77, 255, 0.1);
+}
+
+/* Ma'at Ideals - Sacred List */
+.ideals-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    margin-top: var(--sacred-spacing);
+}
+
+.ideals-list li {
+    background: linear-gradient(135deg, rgba(26, 15, 46, 0.8), rgba(74, 20, 140, 0.4));
+    backdrop-filter: blur(15px);
+    padding: var(--sacred-spacing);
+    border-radius: 15px;
+    border-left: 4px solid var(--divine-gold);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--void-shadow);
+    font-family: 'Crimson Text', serif;
+    font-size: 1.1rem;
+}
+
+.ideals-list li::before {
+    content: '𓂀';
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: var(--divine-gold);
+    opacity: 0.3;
+    transition: all 0.4s ease;
+    text-shadow: var(--divine-glow);
+}
+
+.ideals-list li:hover {
+    transform: translateX(15px) scale(1.02);
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(124, 77, 255, 0.2));
+    box-shadow: var(--divine-glow);
+    border-left-color: var(--energy-cyan);
+}
+
+.ideals-list li:hover::before {
+    opacity: 1;
+    transform: translateY(-50%) rotate(360deg) scale(1.2);
+    color: var(--energy-cyan);
+}
+
+/* Sacred Information Box */
+.maat-info {
+    margin-top: var(--sacred-spacing);
+    padding: var(--sacred-spacing);
+    background: linear-gradient(135deg, rgba(26, 15, 46, 0.9), rgba(45, 27, 105, 0.7));
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    box-shadow: var(--void-shadow);
+}
+
+.maat-info h3 {
+    color: var(--divine-gold);
+    margin-bottom: 1rem;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    text-shadow: var(--divine-glow);
+}
+
+/* Divine Copy Notification */
+#copy-notification {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: linear-gradient(135deg, var(--divine-gold), var(--sacred-amber));
+    color: var(--cosmic-void);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    display: none;
+    z-index: 1000;
+    box-shadow: var(--divine-glow);
+    animation: divineAppear 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+@keyframes divineAppear {
+    from { 
+        transform: translateX(100%) scale(0.8); 
+        opacity: 0; 
+    }
+    to { 
+        transform: translateX(0) scale(1); 
+        opacity: 1; 
+    }
+}
+
+/* Sacred Loading Animation */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    color: var(--divine-gold);
+    flex-direction: column;
+}
+
+.loading::after {
+    content: '';
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgba(255, 215, 0, 0.2);
+    border-top: 4px solid var(--divine-gold);
+    border-radius: 50%;
+    animation: cosmicSpin 2s linear infinite;
+    margin-top: 1rem;
+    box-shadow: var(--divine-glow);
+}
+
+@keyframes cosmicSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Keyboard Shortcuts Help */
+.shortcuts-help {
+    margin-top: var(--sacred-spacing);
+    padding: 1rem;
+    background: rgba(26, 15, 46, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.shortcuts-help kbd {
+    background: linear-gradient(135deg, var(--mystic-blue), var(--astral-indigo));
+    color: var(--spirit-white);
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Sacred Geometry */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .tabs {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .filter-controls {
+        flex-direction: column;
+    }
+    
+    .filter-controls input,
+    .filter-controls select {
+        min-width: 100%;
+    }
+    
+    #results-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .ideals-list {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .glyph-symbol {
+        font-size: 3rem;
+    }
+    
+    #copy-notification {
+        right: 1rem;
+        left: 1rem;
+        text-align: center;
+    }
+}
+
+/* Accessibility & Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    body::before,
+    body::after {
+        animation: none;
+    }
+}
+
+/* Dark Mode Enhancement */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --ethereal-silver: #f5f5f5;
+        --cosmic-void: #000000;
+    }
+}
+
+/* Glyph Streams Styling */
+.stream-collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--sacred-spacing);
+    margin-top: var(--sacred-spacing);
+}
+
+.stream-card {
+    background: linear-gradient(135deg, rgba(26, 15, 46, 0.8), rgba(45, 27, 105, 0.6));
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 20px;
+    padding: var(--sacred-spacing);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--void-shadow);
+}
+
+.stream-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: var(--divine-glow), var(--void-shadow);
+    border-color: var(--divine-gold);
+}
+
+.stream-glyphs {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--divine-gold);
+    text-shadow: var(--divine-glow);
+    font-family: 'Noto Sans Egyptian Hieroglyphs', 'Unifont', serif;
+    letter-spacing: 0.2rem;
+    line-height: 1.4;
+    animation: glyphPulse 3s ease-in-out infinite;
+    font-feature-settings: "liga" off;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.stream-translation {
+    font-size: 1.1rem;
+    color: var(--ethereal-silver);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    font-family: 'Crimson Text', serif;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.stream-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.cluster {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    background: rgba(124, 77, 255, 0.1);
+    border-radius: 10px;
+    border-left: 3px solid var(--life-force);
+}
+
+.cluster-glyphs {
+    font-size: 1.2rem;
+    color: var(--divine-gold);
+    font-family: 'Noto Sans Egyptian Hieroglyphs', 'Unifont', serif;
+    min-width: 120px;
+    text-align: center;
+    font-feature-settings: "liga" off;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.cluster-meaning {
+    color: var(--energy-cyan);
+    font-family: 'Crimson Text', serif;
+    font-size: 0.9rem;
+    flex: 1;
+}
+
+.streams-info {
+    margin-top: var(--sacred-spacing);
+    padding: var(--sacred-spacing);
+    background: linear-gradient(135deg, rgba(26, 15, 46, 0.9), rgba(45, 27, 105, 0.7));
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    box-shadow: var(--void-shadow);
+}
+
+.streams-info h3 {
+    color: var(--divine-gold);
+    margin-bottom: 1rem;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    text-shadow: var(--divine-glow);
+}
+
+/* AI Alignment Tab Styles */
+.alignment-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.wisdom-section {
+    margin-bottom: calc(var(--sacred-spacing) * 1.5);
+    padding: var(--sacred-spacing);
+    background: linear-gradient(135deg, rgba(26, 15, 46, 0.8), rgba(45, 27, 105, 0.6));
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 20px;
+    box-shadow: var(--void-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.wisdom-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.05), transparent);
+    animation: energyFlow 8s linear infinite;
+}
+
+.wisdom-section h2 {
+    margin-bottom: 1rem;
+    text-shadow: var(--divine-glow);
+}
+
+.problem-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.problem-item {
+    padding: 1rem;
+    background: rgba(124, 77, 255, 0.1);
+    border-left: 3px solid var(--life-force);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.problem-item:hover {
+    background: rgba(124, 77, 255, 0.2);
+    transform: translateX(10px);
+}
+
+.cosmic-forces {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--sacred-spacing);
+    margin: 1.5rem 0;
+}
+
+.force-card {
+    padding: var(--sacred-spacing);
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.maat-card {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(0, 229, 255, 0.1));
+    border: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+.isfet-card {
+    background: linear-gradient(135deg, rgba(124, 77, 255, 0.1), rgba(255, 107, 107, 0.1));
+    border: 2px solid rgba(124, 77, 255, 0.3);
+}
+
+.force-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: var(--divine-glow);
+}
+
+.insight-box {
+    background: linear-gradient(135deg, rgba(0, 229, 255, 0.1), rgba(124, 77, 255, 0.1));
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.application-levels {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.level-card {
+    padding: 1.5rem;
+    background: rgba(26, 15, 46, 0.6);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 15px;
+    border-left: 4px solid var(--energy-cyan);
+    transition: all 0.3s ease;
+}
+
+.level-card:hover {
+    background: rgba(26, 15, 46, 0.8);
+    border-left-color: var(--divine-gold);
+    transform: translateX(10px);
+}
+
+.metaphor-box {
+    background: rgba(0, 229, 255, 0.1);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.measurement-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.measurement-list li {
+    padding: 0.8rem;
+    background: rgba(124, 77, 255, 0.1);
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    border-left: 3px solid var(--energy-cyan);
+    transition: all 0.3s ease;
+}
+
+.measurement-list li:hover {
+    background: rgba(124, 77, 255, 0.2);
+    transform: translateX(10px);
+}
+
+.reframe-points {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.reframe-item {
+    padding: 1.2rem;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(124, 77, 255, 0.1));
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.reframe-item:hover {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(124, 77, 255, 0.15));
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.2);
+}
+
+.practical-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.practical-card {
+    padding: 1.5rem;
+    background: rgba(45, 27, 105, 0.4);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.practical-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    background: rgba(45, 27, 105, 0.6);
+    box-shadow: var(--astral-glow);
+}
+
+.final-wisdom {
+    background: radial-gradient(ellipse at center, rgba(255, 215, 0, 0.1), transparent);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.warning-box {
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 165, 0, 0.1));
+    border: 1px solid rgba(255, 165, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+.conclusion {
+    border: 2px solid rgba(255, 215, 0, 0.4);
+    background: linear-gradient(135deg, rgba(26, 15, 46, 0.9), rgba(45, 27, 105, 0.8));
+}
+
+/* Responsive adjustments for alignment tab */
+@media (max-width: 768px) {
+    .cosmic-forces {
+        grid-template-columns: 1fr;
+    }
+    
+    .practical-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .wisdom-section {
+        padding: 1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .tabs,
+    .filter-controls,
+    #copy-notification,
+    .shortcuts-help {
+        display: none;
+    }
+    
+    .glyph-card,
+    .stream-card {
+        break-inside: avoid;
+        border: 1px solid #ccc;
+        background: white;
+    }
+}
