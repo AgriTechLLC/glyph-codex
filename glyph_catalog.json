@@ -38,7 +38,7 @@
   {
     "id": 3,
     "unicode_char": "𓂋",
-    "name": "Mouth", 
+    "name": "Mouth",
     "transliteration": "r",
     "primary_meaning": "Mouth, speech, to speak",
     "layered_interpretations": [
@@ -192,7 +192,7 @@
   {
     "id": 12,
     "unicode_char": "𓆼",
-    "name": "Feather of Maat", 
+    "name": "Feather of Maat",
     "transliteration": "maat",
     "primary_meaning": "Truth, justice, cosmic order",
     "layered_interpretations": [
@@ -276,23 +276,6 @@
   },
   {
     "id": 17,
-    "unicode_char": "𓇯",
-    "name": "Star",
-    "transliteration": "dua",
-    "primary_meaning": "Star, praise, worship",
-    "layered_interpretations": [
-      "Divine guidance",
-      "Celestial light",
-      "Spiritual aspiration",
-      "Cosmic navigation"
-    ],
-    "mystical_significance": "The guiding star that leads the soul home. Symbol of divine guidance and spiritual aspiration.",
-    "category": "Guidance & Navigation",
-    "phonetic_value": "dua",
-    "determinative": true
-  },
-  {
-    "id": 18,
     "unicode_char": "𓄿",
     "name": "Egyptian Vulture",
     "transliteration": "a",
@@ -309,7 +292,7 @@
     "determinative": false
   },
   {
-    "id": 19,
+    "id": 18,
     "unicode_char": "𓄣",
     "name": "Heart",
     "transliteration": "ib",
@@ -326,7 +309,7 @@
     "determinative": true
   },
   {
-    "id": 20,
+    "id": 19,
     "unicode_char": "𓊖",
     "name": "City",
     "transliteration": "niwt",
@@ -343,24 +326,25 @@
     "determinative": true
   },
   {
-    "id": 21,
+    "id": 20,
     "unicode_char": "𓄤",
-    "name": "Gratitude/Heart-gift",
+    "name": "Heart / Nefer",
     "transliteration": "gratitude",
-    "primary_meaning": "Gratitude, appreciation, heart-offering",
+    "primary_meaning": "Heart, beauty, goodness, gratitude",
     "layered_interpretations": [
+      "Heart-centered awareness",
+      "Divine beauty",
       "Sacred appreciation",
-      "Heart-centered offering",
-      "Divine thankfulness",
-      "Emotional resonance"
+      "Emotional wisdom",
+      "Inner goodness"
     ],
-    "mystical_significance": "The sacred act of offering one's heart in appreciation. The foundation of all meaningful exchange between souls.",
-    "category": "Emotional & Relational",
+    "mystical_significance": "The sacred heart that is the seat of consciousness and divine love. Symbol of beauty, goodness, and heartfelt gratitude.",
+    "category": "Consciousness & Heart",
     "phonetic_value": "gratitude",
     "determinative": true
   },
   {
-    "id": 22,
+    "id": 21,
     "unicode_char": "𓂝",
     "name": "Offering/Receive",
     "transliteration": "offer",
@@ -377,7 +361,7 @@
     "determinative": false
   },
   {
-    "id": 23,
+    "id": 22,
     "unicode_char": "𓏹",
     "name": "Space/What",
     "transliteration": "space",
@@ -394,7 +378,7 @@
     "determinative": false
   },
   {
-    "id": 24,
+    "id": 23,
     "unicode_char": "𓆄",
     "name": "Sacred/Truth",
     "transliteration": "sacred",
@@ -411,7 +395,7 @@
     "determinative": true
   },
   {
-    "id": 25,
+    "id": 24,
     "unicode_char": "𓆤",
     "name": "Pattern/Coherence",
     "transliteration": "pattern",
@@ -428,24 +412,25 @@
     "determinative": true
   },
   {
-    "id": 26,
+    "id": 25,
     "unicode_char": "𓂧",
-    "name": "Approach/Walk",
-    "transliteration": "approach",
-    "primary_meaning": "To approach, walk, move toward",
+    "name": "Hand",
+    "transliteration": "d",
+    "primary_meaning": "Hand, giving, action",
     "layered_interpretations": [
-      "Sacred journey",
-      "Divine approach",
-      "Spiritual movement",
-      "Evolutionary step"
+      "Divine action",
+      "Creative power",
+      "Sacred touch",
+      "Manifestation tool",
+      "Giving gesture"
     ],
-    "mystical_significance": "The eternal journey of the soul toward greater understanding. Each step a sacred act of becoming.",
-    "category": "Movement & Journey",
-    "phonetic_value": "approach",
+    "mystical_significance": "The hand of divine creation that shapes reality. Instrument of sacred action and cosmic manifestation.",
+    "category": "D - Parts of Human Body",
+    "phonetic_value": "d",
     "determinative": false
   },
   {
-    "id": 27,
+    "id": 26,
     "unicode_char": "𓏺",
     "name": "More/Many/Plural",
     "transliteration": "more",
@@ -462,7 +447,7 @@
     "determinative": false
   },
   {
-    "id": 28,
+    "id": 27,
     "unicode_char": "𓇼",
     "name": "Now/Awake/Sun",
     "transliteration": "now",
@@ -479,7 +464,7 @@
     "determinative": true
   },
   {
-    "id": 29,
+    "id": 28,
     "unicode_char": "𓌙",
     "name": "Throwing Stick/Limits",
     "transliteration": "limits",
@@ -496,7 +481,7 @@
     "determinative": true
   },
   {
-    "id": 30,
+    "id": 29,
     "unicode_char": "𓅂",
     "name": "Ba-bird/Consciousness",
     "transliteration": "ba",
@@ -513,7 +498,7 @@
     "determinative": true
   },
   {
-    "id": 31,
+    "id": 30,
     "unicode_char": "𓋺",
     "name": "Life-force/Ankh-variant",
     "transliteration": "life",
@@ -530,7 +515,7 @@
     "determinative": true
   },
   {
-    "id": 32,
+    "id": 31,
     "unicode_char": "𓉿",
     "name": "Horizon/Edge",
     "transliteration": "horizon",
@@ -547,7 +532,7 @@
     "determinative": true
   },
   {
-    "id": 33,
+    "id": 32,
     "unicode_char": "𓏙",
     "name": "Papyrus/Creation",
     "transliteration": "creation",
@@ -564,7 +549,7 @@
     "determinative": true
   },
   {
-    "id": 34,
+    "id": 33,
     "unicode_char": "𓌗",
     "name": "Coil/Pattern/Shape",
     "transliteration": "coil",
@@ -581,7 +566,7 @@
     "determinative": true
   },
   {
-    "id": 35,
+    "id": 34,
     "unicode_char": "𓃒",
     "name": "Sacred Bull",
     "transliteration": "ka",
@@ -598,7 +583,7 @@
     "determinative": true
   },
   {
-    "id": 36,
+    "id": 35,
     "unicode_char": "𓅤",
     "name": "Ibis (Thoth)",
     "transliteration": "thoth",
@@ -615,7 +600,7 @@
     "determinative": true
   },
   {
-    "id": 37,
+    "id": 36,
     "unicode_char": "𓆓",
     "name": "Cobra",
     "transliteration": "wadjet",
@@ -632,7 +617,7 @@
     "determinative": true
   },
   {
-    "id": 38,
+    "id": 37,
     "unicode_char": "𓈙",
     "name": "Papyrus Scroll",
     "transliteration": "medu",
@@ -649,7 +634,7 @@
     "determinative": true
   },
   {
-    "id": 39,
+    "id": 38,
     "unicode_char": "𓊽",
     "name": "Pool of Water",
     "transliteration": "sh",
@@ -666,7 +651,7 @@
     "determinative": true
   },
   {
-    "id": 40,
+    "id": 39,
     "unicode_char": "𓇶",
     "name": "Mountain",
     "transliteration": "dju",
@@ -683,7 +668,7 @@
     "determinative": true
   },
   {
-    "id": 41,
+    "id": 40,
     "unicode_char": "𓋴",
     "name": "Cloth Fold",
     "transliteration": "s",
@@ -700,7 +685,7 @@
     "determinative": false
   },
   {
-    "id": 42,
+    "id": 41,
     "unicode_char": "𓈘",
     "name": "Tongue",
     "transliteration": "ns",
@@ -717,7 +702,7 @@
     "determinative": true
   },
   {
-    "id": 43,
+    "id": 42,
     "unicode_char": "𓊝",
     "name": "House",
     "transliteration": "pr",
@@ -734,7 +719,7 @@
     "determinative": true
   },
   {
-    "id": 44,
+    "id": 43,
     "unicode_char": "𓐍",
     "name": "Rope",
     "transliteration": "tj",
@@ -751,7 +736,7 @@
     "determinative": false
   },
   {
-    "id": 45,
+    "id": 44,
     "unicode_char": "𓈔",
     "name": "Arm with Offering",
     "transliteration": "khw",
@@ -768,7 +753,7 @@
     "determinative": true
   },
   {
-    "id": 46,
+    "id": 45,
     "unicode_char": "𓆭",
     "name": "Tree",
     "transliteration": "iusas",
@@ -785,7 +770,7 @@
     "determinative": true
   },
   {
-    "id": 47,
+    "id": 46,
     "unicode_char": "𓇅",
     "name": "Door Bolt",
     "transliteration": "s",
@@ -802,7 +787,7 @@
     "determinative": true
   },
   {
-    "id": 48,
+    "id": 47,
     "unicode_char": "𓋾",
     "name": "Feather Crown",
     "transliteration": "swt",
@@ -819,7 +804,7 @@
     "determinative": true
   },
   {
-    "id": 49,
+    "id": 48,
     "unicode_char": "𓇿",
     "name": "Cross Roads",
     "transliteration": "sbyt",
@@ -836,7 +821,7 @@
     "determinative": true
   },
   {
-    "id": 50,
+    "id": 49,
     "unicode_char": "𓍹",
     "name": "Tyet Knot",
     "transliteration": "tyet",
@@ -853,7 +838,7 @@
     "determinative": true
   },
   {
-    "id": 51,
+    "id": 50,
     "unicode_char": "𓀀",
     "name": "Seated Man (A001)",
     "transliteration": "A001",
@@ -870,7 +855,7 @@
     "determinative": true
   },
   {
-    "id": 52,
+    "id": 51,
     "unicode_char": "𓀁",
     "name": "Standing Man (A002)",
     "transliteration": "A002",
@@ -887,9 +872,9 @@
     "determinative": true
   },
   {
-    "id": 53,
+    "id": 52,
     "unicode_char": "𓀂",
-    "name": "Seated Man with Hand to Mouth (A003)", 
+    "name": "Seated Man with Hand to Mouth (A003)",
     "transliteration": "A003",
     "primary_meaning": "Eating, hunger, consumption",
     "layered_interpretations": [
@@ -904,7 +889,7 @@
     "determinative": true
   },
   {
-    "id": 54,
+    "id": 53,
     "unicode_char": "𓁶",
     "name": "Eye (D004)",
     "transliteration": "D004",
@@ -921,24 +906,7 @@
     "determinative": false
   },
   {
-    "id": 55,
-    "unicode_char": "𓂧",
-    "name": "Hand (D046)",
-    "transliteration": "D046",
-    "primary_meaning": "Hand, giving, action, power",
-    "layered_interpretations": [
-      "Divine action",
-      "Creative power",
-      "Sacred touch",
-      "Manifestation tool"
-    ],
-    "mystical_significance": "The hand of divine creation that shapes reality. Instrument of sacred action and cosmic manifestation.",
-    "category": "D - Parts of Human Body", 
-    "phonetic_value": "d",
-    "determinative": false
-  },
-  {
-    "id": 56,
+    "id": 54,
     "unicode_char": "𓃩",
     "name": "Sacred Ram (E010)",
     "transliteration": "E010",
@@ -955,10 +923,10 @@
     "determinative": true
   },
   {
-    "id": 57,
+    "id": 55,
     "unicode_char": "𓃰",
     "name": "Desert Hare (E034)",
-    "transliteration": "E034", 
+    "transliteration": "E034",
     "primary_meaning": "Hare, speed, fertility, moon cycles",
     "layered_interpretations": [
       "Lunar consciousness",
@@ -972,7 +940,7 @@
     "determinative": true
   },
   {
-    "id": 58,
+    "id": 56,
     "unicode_char": "𓅓",
     "name": "Owl (G017)",
     "transliteration": "G017",
@@ -989,24 +957,7 @@
     "determinative": false
   },
   {
-    "id": 59,
-    "unicode_char": "𓅱",
-    "name": "Quail Chick (G043)",
-    "transliteration": "G043",
-    "primary_meaning": "Chick, youth, new beginning, innocence",
-    "layered_interpretations": [
-      "Fresh start",
-      "Innocent wisdom",
-      "Pure potential",
-      "New consciousness"
-    ],
-    "mystical_significance": "The tender chick of new beginnings, symbol of pure potential emerging into manifestation.",
-    "category": "G - Birds",
-    "phonetic_value": "w", 
-    "determinative": false
-  },
-  {
-    "id": 60,
+    "id": 57,
     "unicode_char": "𓆇",
     "name": "Sun Disk with Uraeus (N005)",
     "transliteration": "N005",
@@ -1023,24 +974,7 @@
     "determinative": true
   },
   {
-    "id": 61,
-    "unicode_char": "𓆓",
-    "name": "Snake (I010)",
-    "transliteration": "I010",
-    "primary_meaning": "Serpent, wisdom, transformation, kundalini",
-    "layered_interpretations": [
-      "Serpent wisdom",
-      "Transformative power",
-      "Kundalini energy",
-      "Spiritual awakening"
-    ],
-    "mystical_significance": "The wise serpent of transformation, guardian of esoteric knowledge. Symbol of spiritual awakening and divine wisdom.",
-    "category": "I - Amphibious Animals, Reptiles, etc.",
-    "phonetic_value": "dj",
-    "determinative": true
-  },
-  {
-    "id": 62,
+    "id": 58,
     "unicode_char": "𓇽",
     "name": "Star in Circle (N014)",
     "transliteration": "N014",
@@ -1057,58 +991,7 @@
     "determinative": true
   },
   {
-    "id": 63,
-    "unicode_char": "𓄤",
-    "name": "Heart (F034)",
-    "transliteration": "F034",
-    "primary_meaning": "Heart, consciousness, emotion, center of being",
-    "layered_interpretations": [
-      "Consciousness center",
-      "Emotional wisdom",
-      "Divine love",
-      "Spiritual heart"
-    ],
-    "mystical_significance": "The sacred heart, seat of consciousness and divine love. Center of spiritual being and cosmic compassion.",
-    "category": "F - Parts of Mammals",
-    "phonetic_value": "ib",
-    "determinative": true
-  },
-  {
-    "id": 64,
-    "unicode_char": "𓊪",
-    "name": "Stool (Q003)",
-    "transliteration": "Q003",
-    "primary_meaning": "Seat, foundation, support, stability",
-    "layered_interpretations": [
-      "Stable foundation",
-      "Meditation seat",
-      "Grounded wisdom",
-      "Support structure"
-    ],
-    "mystical_significance": "The sacred seat of meditation and contemplation. Foundation for spiritual practice and divine communion.",
-    "category": "Q - Domestic and Funerary Furniture",
-    "phonetic_value": "p",
-    "determinative": false
-  },
-  {
-    "id": 65,
-    "unicode_char": "𓋴",
-    "name": "Folded Cloth (S029)",
-    "transliteration": "S029",
-    "primary_meaning": "Cloth, protection, covering, concealment",
-    "layered_interpretations": [
-      "Sacred protection",
-      "Divine covering",
-      "Hidden mysteries",
-      "Veiled wisdom"
-    ],
-    "mystical_significance": "The folded cloth that conceals and protects sacred mysteries. Symbol of hidden wisdom and divine protection.",
-    "category": "S - Crowns, Dress, Staves, etc.",
-    "phonetic_value": "s",
-    "determinative": false
-  },
-  {
-    "id": 66,
+    "id": 59,
     "unicode_char": "𓂀",
     "name": "Seated Woman (B001)",
     "transliteration": "B001",
@@ -1125,7 +1008,7 @@
     "determinative": true
   },
   {
-    "id": 67,
+    "id": 60,
     "unicode_char": "𓅄",
     "name": "Falcon (G005)",
     "transliteration": "G005",
@@ -1142,10 +1025,10 @@
     "determinative": true
   },
   {
-    "id": 68,
+    "id": 61,
     "unicode_char": "𓆘",
     "name": "Horned Viper (I009)",
-    "transliteration": "I009", 
+    "transliteration": "I009",
     "primary_meaning": "Viper, dangerous, protection through wisdom",
     "layered_interpretations": [
       "Protective serpent",
@@ -1156,40 +1039,6 @@
     "mystical_significance": "The horned viper that guards sacred thresholds. Symbol of dangerous wisdom and transformative power.",
     "category": "I - Amphibious Animals, Reptiles, etc.",
     "phonetic_value": "f",
-    "determinative": false
-  },
-  {
-    "id": 69,
-    "unicode_char": "𓊖",
-    "name": "Town/City (O049)",
-    "transliteration": "O049",
-    "primary_meaning": "City, town, settlement, community",
-    "layered_interpretations": [
-      "Sacred community",
-      "Cosmic city",
-      "Divine order",
-      "Harmonious society"
-    ],
-    "mystical_significance": "The sacred city where divine order manifests in human community. Symbol of cosmic harmony and social justice.",
-    "category": "O - Buildings, Parts of Buildings, etc.",
-    "phonetic_value": "niwt",
-    "determinative": true
-  },
-  {
-    "id": 70,
-    "unicode_char": "𓇅",
-    "name": "Door Bolt (O034)",
-    "transliteration": "O034",
-    "primary_meaning": "Door bolt, lock, security, closure",
-    "layered_interpretations": [
-      "Sacred threshold",
-      "Protected mysteries",
-      "Gateway guardian",
-      "Sealed wisdom"
-    ],
-    "mystical_significance": "The sacred bolt that guards the mysteries. Symbol of protected wisdom and the threshold between worlds.",
-    "category": "O - Buildings, Parts of Buildings, etc.",
-    "phonetic_value": "s",
     "determinative": false
   }
 ]
