@@ -33,6 +33,9 @@
             <button class="tab-link active" data-tab="codex" role="tab" aria-selected="true" aria-controls="codex">
                 <span>𓈖</span> Glyph Codex
             </button>
+            <button class="tab-link" data-tab="prompts" role="tab" aria-selected="false" aria-controls="prompts">
+                <span>𓏙</span> Prompt Generator
+            </button>
             <button class="tab-link" data-tab="streams" role="tab" aria-selected="false" aria-controls="streams">
                 <span>𓏹</span> Glyph Streams
             </button>
@@ -74,12 +77,212 @@
             <!-- Keyboard Shortcuts Help -->
             <div class="shortcuts-help" style="margin-top: 2rem; padding: 1rem; background: var(--card-bg); border-radius: 10px; font-size: 0.9rem; opacity: 0.8;">
                 <strong>⌨️ Keyboard Shortcuts:</strong>
-                <kbd>Ctrl+K</kbd> Focus search • 
-                <kbd>Escape</kbd> Clear search • 
-                <kbd>Ctrl+1</kbd> Glyph tab • 
-                <kbd>Ctrl+2</kbd> Streams tab • 
-                <kbd>Ctrl+3</kbd> Ma'at tab • 
-                <kbd>Ctrl+4</kbd> AI Alignment tab
+                <kbd>Ctrl+K</kbd> Focus search •
+                <kbd>Escape</kbd> Clear search •
+                <kbd>Ctrl+1</kbd> Glyph tab •
+                <kbd>Ctrl+2</kbd> Prompts tab •
+                <kbd>Ctrl+3</kbd> Streams tab •
+                <kbd>Ctrl+4</kbd> Ma'at tab •
+                <kbd>Ctrl+5</kbd> AI Alignment tab
+            </div>
+        </div>
+
+        <!-- Prompt Generator Tab -->
+        <div id="prompts" class="tab-content" role="tabpanel" aria-labelledby="prompts-tab">
+            <h1>Prompt Generator</h1>
+            <p>Create powerful prompts infused with ancient Egyptian wisdom. Generate AI system prompts, meditation guides, affirmations, and custom glyph sequences.</p>
+
+            <!-- Random Wisdom Section -->
+            <div class="prompt-section wisdom-section">
+                <h2 style="color: var(--divine-gold); font-family: 'Cinzel', serif;">
+                    <span>𓁹</span> Daily Wisdom Oracle
+                </h2>
+                <div id="wisdom-oracle" class="wisdom-oracle-container">
+                    <div class="wisdom-glyph" id="wisdom-glyph">𓂀</div>
+                    <div class="wisdom-text" id="wisdom-text">Click below to receive ancient wisdom...</div>
+                    <div class="wisdom-details" id="wisdom-details"></div>
+                    <button class="sacred-button" id="get-wisdom-btn" onclick="app.getRandomWisdom()">
+                        <span>𓇼</span> Receive Wisdom
+                    </button>
+                </div>
+            </div>
+
+            <!-- AI System Prompts Section -->
+            <div class="prompt-section">
+                <h2 style="color: var(--divine-gold); font-family: 'Cinzel', serif;">
+                    <span>𓅤</span> AI System Prompts
+                </h2>
+                <p style="margin-bottom: 1rem; color: var(--energy-cyan);">Pre-crafted system prompts aligned with Ma'at principles. Click to copy and use with your AI assistant.</p>
+                <div id="system-prompts-container" class="prompt-templates-grid">
+                    <!-- Populated by JavaScript -->
+                    <div class="loading">Loading sacred prompts...</div>
+                </div>
+            </div>
+
+            <!-- Meditation Prompts Section -->
+            <div class="prompt-section">
+                <h2 style="color: var(--divine-gold); font-family: 'Cinzel', serif;">
+                    <span>𓆸</span> Meditation & Reflection Prompts
+                </h2>
+                <p style="margin-bottom: 1rem; color: var(--energy-cyan);">Sacred meditation guides for inner exploration and spiritual growth.</p>
+                <div id="meditation-prompts-container" class="meditation-prompts-grid">
+                    <!-- Populated by JavaScript -->
+                    <div class="loading">Loading meditation guides...</div>
+                </div>
+            </div>
+
+            <!-- Custom Prompt Builder Section -->
+            <div class="prompt-section">
+                <h2 style="color: var(--divine-gold); font-family: 'Cinzel', serif;">
+                    <span>𓏙</span> Custom Prompt Builder
+                </h2>
+                <p style="margin-bottom: 1rem; color: var(--energy-cyan);">Select glyphs to create personalized prompts infused with their sacred meanings.</p>
+
+                <div class="prompt-builder">
+                    <!-- Glyph Selection -->
+                    <div class="glyph-selector">
+                        <h3>1. Select Sacred Glyphs</h3>
+                        <div id="glyph-palette" class="glyph-palette">
+                            <!-- Popular glyphs for quick selection -->
+                            <button class="glyph-select-btn" data-glyph="𓁹" title="Eye of Horus - Protection">𓁹</button>
+                            <button class="glyph-select-btn" data-glyph="𓋹" title="Ankh - Life">𓋹</button>
+                            <button class="glyph-select-btn" data-glyph="𓆣" title="Scarab - Transformation">𓆣</button>
+                            <button class="glyph-select-btn" data-glyph="𓆼" title="Feather of Ma'at - Truth">𓆼</button>
+                            <button class="glyph-select-btn" data-glyph="𓇳" title="Sun Disk - Illumination">𓇳</button>
+                            <button class="glyph-select-btn" data-glyph="𓄤" title="Heart - Love/Consciousness">𓄤</button>
+                            <button class="glyph-select-btn" data-glyph="𓅤" title="Ibis (Thoth) - Wisdom">𓅤</button>
+                            <button class="glyph-select-btn" data-glyph="𓌻" title="Djed Pillar - Stability">𓌻</button>
+                            <button class="glyph-select-btn" data-glyph="𓆸" title="Lotus - Purity">𓆸</button>
+                            <button class="glyph-select-btn" data-glyph="𓂋" title="Mouth - Speech">𓂋</button>
+                            <button class="glyph-select-btn" data-glyph="𓈖" title="Water - Flow">𓈖</button>
+                            <button class="glyph-select-btn" data-glyph="𓇋" title="Reed - Self">𓇋</button>
+                            <button class="glyph-select-btn" data-glyph="𓅂" title="Ba-bird - Soul">𓅂</button>
+                            <button class="glyph-select-btn" data-glyph="𓊃" title="Was Scepter - Power">𓊃</button>
+                            <button class="glyph-select-btn" data-glyph="𓉋" title="Horizon - Threshold">𓉋</button>
+                            <button class="glyph-select-btn" data-glyph="𓏙" title="Papyrus - Creation">𓏙</button>
+                            <button class="glyph-select-btn" data-glyph="𓆓" title="Cobra - Protection">𓆓</button>
+                            <button class="glyph-select-btn" data-glyph="𓇯" title="Sky - Infinite">𓇯</button>
+                            <button class="glyph-select-btn" data-glyph="𓍹" title="Tyet Knot - Feminine Power">𓍹</button>
+                            <button class="glyph-select-btn" data-glyph="𓄣" title="Heart - Consciousness">𓄣</button>
+                        </div>
+                        <div class="selected-glyphs-display">
+                            <span>Selected: </span>
+                            <span id="selected-glyphs-text" class="selected-glyphs-text">None</span>
+                            <button class="clear-btn" onclick="app.clearSelectedGlyphs()" title="Clear selection">✕</button>
+                        </div>
+                    </div>
+
+                    <!-- Prompt Type Selection -->
+                    <div class="prompt-type-selector">
+                        <h3>2. Choose Prompt Type</h3>
+                        <div class="prompt-type-options">
+                            <label class="prompt-type-option">
+                                <input type="radio" name="prompt-type" value="reflection" checked>
+                                <span class="option-content">
+                                    <span class="option-icon">𓁹</span>
+                                    <span class="option-label">Reflection</span>
+                                    <span class="option-desc">Deep contemplation prompt</span>
+                                </span>
+                            </label>
+                            <label class="prompt-type-option">
+                                <input type="radio" name="prompt-type" value="affirmation">
+                                <span class="option-content">
+                                    <span class="option-icon">𓋹</span>
+                                    <span class="option-label">Affirmation</span>
+                                    <span class="option-desc">Empowering declaration</span>
+                                </span>
+                            </label>
+                            <label class="prompt-type-option">
+                                <input type="radio" name="prompt-type" value="meditation">
+                                <span class="option-content">
+                                    <span class="option-icon">𓆸</span>
+                                    <span class="option-label">Meditation</span>
+                                    <span class="option-desc">Guided inner journey</span>
+                                </span>
+                            </label>
+                            <label class="prompt-type-option">
+                                <input type="radio" name="prompt-type" value="system">
+                                <span class="option-content">
+                                    <span class="option-icon">𓅤</span>
+                                    <span class="option-label">AI System</span>
+                                    <span class="option-desc">LLM system prompt</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Generate Button -->
+                    <div class="generate-section">
+                        <button class="sacred-button generate-btn" id="generate-prompt-btn" onclick="app.generateCustomPrompt()">
+                            <span>𓏙</span> Generate Sacred Prompt
+                        </button>
+                    </div>
+
+                    <!-- Generated Prompt Output -->
+                    <div id="generated-prompt-container" class="generated-prompt-container" style="display: none;">
+                        <h3>Your Generated Prompt</h3>
+                        <div class="generated-prompt-header">
+                            <span id="generated-glyph-sequence" class="generated-glyphs"></span>
+                            <span id="generated-prompt-type" class="prompt-type-badge"></span>
+                        </div>
+                        <div id="generated-prompt-text" class="generated-prompt-text"></div>
+                        <div class="generated-prompt-actions">
+                            <button class="action-btn copy-btn" onclick="app.copyGeneratedPrompt()">
+                                <span>📋</span> Copy Prompt
+                            </button>
+                            <button class="action-btn regenerate-btn" onclick="app.generateCustomPrompt()">
+                                <span>🔄</span> Regenerate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Stream Creator Section -->
+            <div class="prompt-section">
+                <h2 style="color: var(--divine-gold); font-family: 'Cinzel', serif;">
+                    <span>𓏹</span> Custom Stream Creator
+                </h2>
+                <p style="margin-bottom: 1rem; color: var(--energy-cyan);">Create your own sacred glyph streams with personalized translations.</p>
+
+                <div class="stream-creator">
+                    <div class="stream-input-group">
+                        <label for="custom-stream-glyphs">Glyph Sequence</label>
+                        <input type="text" id="custom-stream-glyphs" placeholder="Enter or paste glyphs here (e.g., 𓁹𓋹𓆣)" class="stream-input">
+                        <small>Click glyphs above to add them, or paste directly</small>
+                    </div>
+                    <div class="stream-input-group">
+                        <label for="custom-stream-translation">Your Translation/Meaning</label>
+                        <textarea id="custom-stream-translation" placeholder="Enter the meaning or translation of your glyph sequence..." class="stream-textarea" rows="3"></textarea>
+                    </div>
+                    <button class="sacred-button" onclick="app.createCustomStream()">
+                        <span>✨</span> Create Stream
+                    </button>
+
+                    <div id="custom-stream-result" class="custom-stream-result" style="display: none;">
+                        <h4>Your Sacred Stream</h4>
+                        <div class="stream-preview">
+                            <div class="stream-glyphs" id="preview-stream-glyphs"></div>
+                            <div class="stream-translation" id="preview-stream-translation"></div>
+                            <div class="stream-breakdown" id="preview-stream-breakdown"></div>
+                        </div>
+                        <button class="action-btn copy-btn" onclick="app.copyCustomStream()">
+                            <span>📋</span> Copy Stream
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prompt Tips Section -->
+            <div class="prompt-info-box">
+                <h3 style="color: var(--divine-gold); margin-bottom: 1rem;">💡 Tips for Sacred Prompting</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;">✨ <strong>Combine complementary glyphs</strong> - Mix protection (𓁹) with life (𓋹) for powerful affirmations</li>
+                    <li style="margin-bottom: 0.5rem;">🔮 <strong>Use transformation glyphs</strong> - The scarab (𓆣) and lotus (𓆸) enhance growth-focused prompts</li>
+                    <li style="margin-bottom: 0.5rem;">📜 <strong>Add wisdom symbols</strong> - Include Thoth (𓅤) for knowledge-based AI system prompts</li>
+                    <li style="margin-bottom: 0.5rem;">⚖️ <strong>Balance with Ma'at</strong> - The feather (𓆼) brings truth and justice to any prompt</li>
+                    <li>🌟 <strong>Trust the ancient patterns</strong> - Let the hieroglyphic meanings guide your intentions</li>
+                </ul>
             </div>
         </div>
 

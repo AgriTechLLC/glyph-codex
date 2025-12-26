@@ -4,12 +4,17 @@ class MysticalGlyphCodex {
     constructor() {
         this.glyphData = [];
         this.idealsData = [];
+        this.promptTemplates = [];
+        this.meditationPrompts = [];
         this.filteredGlyphs = [];
+        this.selectedGlyphs = [];
         this.currentSearchTerm = '';
         this.currentCategory = '';
         this.isLoading = false;
         this.tooltip = null;
-        
+        this.generatedPrompt = null;
+        this.customStream = null;
+
         // DOM Elements
         this.searchBox = document.getElementById('search-box');
         this.categoryFilter = document.getElementById('category-filter');
@@ -17,7 +22,7 @@ class MysticalGlyphCodex {
         this.tabLinks = document.querySelectorAll('.tab-link');
         this.tabContents = document.querySelectorAll('.tab-content');
         this.copyNotification = document.getElementById('copy-notification');
-        
+
         // Initialize the mystical experience
         this.init();
     }
@@ -217,10 +222,10 @@ class MysticalGlyphCodex {
             }
             
             // Tab switching with numbers (Realm Navigation)
-            if (e.key >= '1' && e.key <= '4' && (e.ctrlKey || e.metaKey)) {
+            if (e.key >= '1' && e.key <= '5' && (e.ctrlKey || e.metaKey)) {
                 e.preventDefault();
                 const tabIndex = parseInt(e.key) - 1;
-                const tabs = ['codex', 'streams', 'maat', 'alignment'];
+                const tabs = ['codex', 'prompts', 'streams', 'maat', 'alignment'];
                 if (tabs[tabIndex]) {
                     this.switchTab(tabs[tabIndex]);
                     this.showDivineMessage(`🌟 Entered ${tabs[tabIndex]} realm`);
@@ -288,10 +293,15 @@ class MysticalGlyphCodex {
         if (tabName === 'maat' && this.idealsData.length === 0) {
             this.loadIdeals();
         }
-        
+
         // Setup stream card interactions
         if (tabName === 'streams') {
             this.setupStreamInteractions();
+        }
+
+        // Load and setup prompts tab
+        if (tabName === 'prompts') {
+            this.setupPromptsTab();
         }
     }
 
@@ -843,6 +853,453 @@ class MysticalGlyphCodex {
             currentRealm: this.currentCategory,
             categories: [...new Set(this.glyphData.map(g => g.category))].length
         };
+    }
+
+    // ==========================================
+    // PROMPT GENERATOR FUNCTIONALITY
+    // ==========================================
+
+    async setupPromptsTab() {
+        // Load data if not already loaded
+        if (this.promptTemplates.length === 0) {
+            await this.loadPromptTemplates();
+        }
+        if (this.meditationPrompts.length === 0) {
+            await this.loadMeditationPrompts();
+        }
+
+        // Setup glyph palette interactions
+        this.setupGlyphPalette();
+    }
+
+    async loadPromptTemplates() {
+        try {
+            console.log('📜 Loading sacred prompt templates...');
+            const response = await fetch('/api/prompt_templates');
+            if (!response.ok) throw new Error('Failed to load prompt templates');
+
+            this.promptTemplates = await response.json();
+            this.displayPromptTemplates();
+            console.log(`✅ ${this.promptTemplates.length} prompt templates loaded`);
+        } catch (error) {
+            console.error('Error loading prompt templates:', error);
+            const container = document.getElementById('system-prompts-container');
+            if (container) {
+                container.innerHTML = '<div class="error-message">Failed to load prompt templates</div>';
+            }
+        }
+    }
+
+    displayPromptTemplates() {
+        const container = document.getElementById('system-prompts-container');
+        if (!container || !this.promptTemplates.length) return;
+
+        const html = this.promptTemplates.map(template => `
+            <div class="prompt-template-card" onclick="app.copyPromptTemplate('${template.id}')">
+                <div class="template-glyphs">${template.glyphs}</div>
+                <h4 class="template-name">${this.escapeHtml(template.name)}</h4>
+                <p class="template-description">${this.escapeHtml(template.description)}</p>
+                <div class="template-category">${this.escapeHtml(template.category)}</div>
+            </div>
+        `).join('');
+
+        container.innerHTML = html;
+    }
+
+    async loadMeditationPrompts() {
+        try {
+            console.log('🧘 Loading meditation prompts...');
+            const response = await fetch('/api/meditation_prompts');
+            if (!response.ok) throw new Error('Failed to load meditation prompts');
+
+            this.meditationPrompts = await response.json();
+            this.displayMeditationPrompts();
+            console.log(`✅ ${this.meditationPrompts.length} meditation prompts loaded`);
+        } catch (error) {
+            console.error('Error loading meditation prompts:', error);
+            const container = document.getElementById('meditation-prompts-container');
+            if (container) {
+                container.innerHTML = '<div class="error-message">Failed to load meditation prompts</div>';
+            }
+        }
+    }
+
+    displayMeditationPrompts() {
+        const container = document.getElementById('meditation-prompts-container');
+        if (!container || !this.meditationPrompts.length) return;
+
+        const html = this.meditationPrompts.map(meditation => `
+            <div class="meditation-card" onclick="app.showMeditationDetails('${meditation.id}')">
+                <div class="meditation-glyphs">${meditation.glyphs}</div>
+                <h4 class="meditation-title">${this.escapeHtml(meditation.title)}</h4>
+                <p class="meditation-preview">${this.escapeHtml(meditation.prompt.substring(0, 100))}...</p>
+                <div class="meditation-action">Click to explore</div>
+            </div>
+        `).join('');
+
+        container.innerHTML = html;
+    }
+
+    showMeditationDetails(meditationId) {
+        const meditation = this.meditationPrompts.find(m => m.id === meditationId);
+        if (!meditation) return;
+
+        // Create modal content
+        const modalContent = `
+            <div class="meditation-modal-content">
+                <div class="meditation-modal-header">
+                    <span class="meditation-modal-glyphs">${meditation.glyphs}</span>
+                    <h2>${this.escapeHtml(meditation.title)}</h2>
+                </div>
+                <div class="meditation-prompt-text">${this.escapeHtml(meditation.prompt)}</div>
+                <div class="meditation-questions">
+                    <h4>Reflection Questions:</h4>
+                    <ul>
+                        ${meditation.reflection_questions.map(q => `<li>${this.escapeHtml(q)}</li>`).join('')}
+                    </ul>
+                </div>
+                <div class="meditation-modal-actions">
+                    <button class="action-btn copy-btn" onclick="app.copyMeditation('${meditation.id}')">
+                        <span>📋</span> Copy Meditation
+                    </button>
+                    <button class="action-btn close-btn" onclick="app.closeMeditationModal()">
+                        <span>✕</span> Close
+                    </button>
+                </div>
+            </div>
+        `;
+
+        // Create and show modal
+        this.showModal(modalContent);
+    }
+
+    showModal(content) {
+        // Remove existing modal if any
+        const existingModal = document.querySelector('.mystical-modal');
+        if (existingModal) existingModal.remove();
+
+        const modal = document.createElement('div');
+        modal.className = 'mystical-modal';
+        modal.innerHTML = `
+            <div class="mystical-modal-overlay" onclick="app.closeMeditationModal()"></div>
+            <div class="mystical-modal-body">
+                ${content}
+            </div>
+        `;
+
+        document.body.appendChild(modal);
+        setTimeout(() => modal.classList.add('active'), 10);
+    }
+
+    closeMeditationModal() {
+        const modal = document.querySelector('.mystical-modal');
+        if (modal) {
+            modal.classList.remove('active');
+            setTimeout(() => modal.remove(), 300);
+        }
+    }
+
+    copyMeditation(meditationId) {
+        const meditation = this.meditationPrompts.find(m => m.id === meditationId);
+        if (!meditation) return;
+
+        const fullText = `${meditation.glyphs}\n\n${meditation.title}\n\n${meditation.prompt}\n\nReflection Questions:\n${meditation.reflection_questions.map((q, i) => `${i + 1}. ${q}`).join('\n')}`;
+
+        this.copyToClipboard(fullText, '🧘 Meditation prompt copied to clipboard!');
+        this.closeMeditationModal();
+    }
+
+    copyPromptTemplate(templateId) {
+        const template = this.promptTemplates.find(t => t.id === templateId);
+        if (!template) return;
+
+        const fullText = `${template.glyphs}\n\n${template.name}\n\n${template.prompt}`;
+
+        this.copyToClipboard(fullText, '📜 System prompt copied to clipboard!');
+        this.trackInteraction('prompt_copy', template.name, `Copied system prompt: ${template.name}`, []);
+    }
+
+    copyToClipboard(text, successMessage) {
+        if (!navigator.clipboard) {
+            this.fallbackCopyTextToClipboard(text);
+            return;
+        }
+
+        navigator.clipboard.writeText(text).then(() => {
+            this.showCopyNotification(successMessage);
+            this.createCopyRipple();
+        }).catch(err => {
+            console.error('Failed to copy:', err);
+            this.fallbackCopyTextToClipboard(text);
+        });
+    }
+
+    // Random Wisdom Generator
+    async getRandomWisdom() {
+        const wisdomBtn = document.getElementById('get-wisdom-btn');
+        const wisdomGlyph = document.getElementById('wisdom-glyph');
+        const wisdomText = document.getElementById('wisdom-text');
+        const wisdomDetails = document.getElementById('wisdom-details');
+
+        if (wisdomBtn) wisdomBtn.disabled = true;
+
+        try {
+            // Add loading animation
+            if (wisdomGlyph) {
+                wisdomGlyph.style.animation = 'glyphPulse 0.5s ease-in-out infinite';
+            }
+
+            const response = await fetch('/api/random_wisdom');
+            if (!response.ok) throw new Error('Failed to receive wisdom');
+
+            const wisdom = await response.json();
+
+            // Update display with animation
+            if (wisdomGlyph) {
+                wisdomGlyph.textContent = wisdom.glyph;
+                wisdomGlyph.style.animation = 'divineAppear 0.5s ease-out';
+            }
+
+            if (wisdomText) {
+                wisdomText.textContent = wisdom.wisdom;
+            }
+
+            if (wisdomDetails) {
+                wisdomDetails.innerHTML = `
+                    <div class="wisdom-detail-item">
+                        <strong>Symbol:</strong> ${this.escapeHtml(wisdom.glyph_name)}
+                    </div>
+                    <div class="wisdom-detail-item">
+                        <strong>Category:</strong> ${this.escapeHtml(wisdom.category)}
+                    </div>
+                `;
+            }
+
+            this.showDivineMessage('🌟 Wisdom received from the ancient realm');
+            this.trackInteraction('wisdom_received', wisdom.glyph_name, wisdom.wisdom, [wisdom.glyph]);
+
+        } catch (error) {
+            console.error('Error receiving wisdom:', error);
+            if (wisdomText) {
+                wisdomText.textContent = 'The wisdom remains veiled. Please try again.';
+            }
+        } finally {
+            if (wisdomBtn) wisdomBtn.disabled = false;
+            if (wisdomGlyph) {
+                wisdomGlyph.style.animation = '';
+            }
+        }
+    }
+
+    // Glyph Palette for Custom Prompt Builder
+    setupGlyphPalette() {
+        const paletteButtons = document.querySelectorAll('.glyph-select-btn');
+        paletteButtons.forEach(btn => {
+            // Remove existing listeners by cloning
+            const newBtn = btn.cloneNode(true);
+            btn.parentNode.replaceChild(newBtn, btn);
+
+            newBtn.addEventListener('click', () => {
+                const glyph = newBtn.getAttribute('data-glyph');
+                this.toggleGlyphSelection(glyph, newBtn);
+            });
+        });
+    }
+
+    toggleGlyphSelection(glyph, button) {
+        const index = this.selectedGlyphs.indexOf(glyph);
+
+        if (index > -1) {
+            // Remove glyph
+            this.selectedGlyphs.splice(index, 1);
+            button.classList.remove('selected');
+        } else {
+            // Add glyph
+            this.selectedGlyphs.push(glyph);
+            button.classList.add('selected');
+        }
+
+        this.updateSelectedGlyphsDisplay();
+
+        // Also add to custom stream input
+        const streamInput = document.getElementById('custom-stream-glyphs');
+        if (streamInput) {
+            streamInput.value = this.selectedGlyphs.join('');
+        }
+    }
+
+    updateSelectedGlyphsDisplay() {
+        const display = document.getElementById('selected-glyphs-text');
+        if (display) {
+            if (this.selectedGlyphs.length === 0) {
+                display.textContent = 'None';
+                display.classList.remove('has-glyphs');
+            } else {
+                display.textContent = this.selectedGlyphs.join(' ');
+                display.classList.add('has-glyphs');
+            }
+        }
+    }
+
+    clearSelectedGlyphs() {
+        this.selectedGlyphs = [];
+        this.updateSelectedGlyphsDisplay();
+
+        // Remove selected class from all buttons
+        document.querySelectorAll('.glyph-select-btn').forEach(btn => {
+            btn.classList.remove('selected');
+        });
+
+        // Clear stream input
+        const streamInput = document.getElementById('custom-stream-glyphs');
+        if (streamInput) streamInput.value = '';
+
+        // Hide generated prompt container
+        const container = document.getElementById('generated-prompt-container');
+        if (container) container.style.display = 'none';
+
+        this.showDivineMessage('✨ Selection cleared');
+    }
+
+    // Custom Prompt Generator
+    async generateCustomPrompt() {
+        if (this.selectedGlyphs.length === 0) {
+            this.showDivineMessage('⚠️ Please select at least one glyph');
+            return;
+        }
+
+        const promptType = document.querySelector('input[name="prompt-type"]:checked')?.value || 'reflection';
+        const generateBtn = document.getElementById('generate-prompt-btn');
+
+        if (generateBtn) generateBtn.disabled = true;
+
+        try {
+            const response = await fetch('/api/generate_glyph_prompt', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    glyphs: this.selectedGlyphs,
+                    type: promptType
+                })
+            });
+
+            if (!response.ok) throw new Error('Failed to generate prompt');
+
+            const result = await response.json();
+            this.generatedPrompt = result;
+            this.displayGeneratedPrompt(result);
+
+            this.showDivineMessage('✨ Sacred prompt generated!');
+            this.trackInteraction('prompt_generated', result.glyph_sequence, `Generated ${promptType} prompt`, this.selectedGlyphs);
+
+        } catch (error) {
+            console.error('Error generating prompt:', error);
+            this.showDivineMessage('⚠️ Failed to generate prompt. Please try again.');
+        } finally {
+            if (generateBtn) generateBtn.disabled = false;
+        }
+    }
+
+    displayGeneratedPrompt(result) {
+        const container = document.getElementById('generated-prompt-container');
+        const glyphSequence = document.getElementById('generated-glyph-sequence');
+        const promptType = document.getElementById('generated-prompt-type');
+        const promptText = document.getElementById('generated-prompt-text');
+
+        if (!container) return;
+
+        if (glyphSequence) glyphSequence.textContent = result.glyph_sequence;
+        if (promptType) {
+            promptType.textContent = result.type.charAt(0).toUpperCase() + result.type.slice(1);
+            promptType.className = `prompt-type-badge type-${result.type}`;
+        }
+        if (promptText) {
+            promptText.textContent = result.prompt;
+        }
+
+        container.style.display = 'block';
+        container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    copyGeneratedPrompt() {
+        if (!this.generatedPrompt) return;
+
+        const fullText = `${this.generatedPrompt.glyph_sequence}\n\n${this.generatedPrompt.prompt}`;
+        this.copyToClipboard(fullText, '📋 Generated prompt copied!');
+    }
+
+    // Custom Stream Creator
+    async createCustomStream() {
+        const glyphInput = document.getElementById('custom-stream-glyphs');
+        const translationInput = document.getElementById('custom-stream-translation');
+
+        const glyphs = glyphInput?.value.trim() || '';
+        const translation = translationInput?.value.trim() || '';
+
+        if (!glyphs) {
+            this.showDivineMessage('⚠️ Please enter glyphs for your stream');
+            return;
+        }
+
+        try {
+            const response = await fetch('/api/create_stream', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    glyphs: [...glyphs],
+                    translation: translation
+                })
+            });
+
+            if (!response.ok) throw new Error('Failed to create stream');
+
+            const result = await response.json();
+            this.customStream = result;
+            this.displayCustomStream(result);
+
+            this.showDivineMessage('🌊 Sacred stream created!');
+            this.trackInteraction('stream_created', glyphs, translation, [...glyphs]);
+
+        } catch (error) {
+            console.error('Error creating stream:', error);
+            this.showDivineMessage('⚠️ Failed to create stream. Please try again.');
+        }
+    }
+
+    displayCustomStream(result) {
+        const container = document.getElementById('custom-stream-result');
+        const glyphsDisplay = document.getElementById('preview-stream-glyphs');
+        const translationDisplay = document.getElementById('preview-stream-translation');
+        const breakdownDisplay = document.getElementById('preview-stream-breakdown');
+
+        if (!container) return;
+
+        if (glyphsDisplay) glyphsDisplay.textContent = result.stream;
+        if (translationDisplay) {
+            translationDisplay.textContent = result.translation ? `"${result.translation}"` : '(No translation provided)';
+        }
+        if (breakdownDisplay && result.breakdown) {
+            breakdownDisplay.innerHTML = result.breakdown.map(item => `
+                <div class="cluster">
+                    <span class="cluster-glyphs">${item.glyph}</span>
+                    <span class="cluster-meaning">${this.escapeHtml(item.name)}: ${this.escapeHtml(item.meaning)}</span>
+                </div>
+            `).join('');
+        }
+
+        container.style.display = 'block';
+        container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    copyCustomStream() {
+        if (!this.customStream) return;
+
+        const fullText = `${this.customStream.stream}\n\n"${this.customStream.translation || 'Ancient wisdom awaits interpretation'}"`;
+        this.copyToClipboard(fullText, '🌊 Custom stream copied!');
     }
 }
 
