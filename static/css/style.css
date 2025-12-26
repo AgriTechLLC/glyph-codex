@@ -944,20 +944,684 @@ h1 {
     }
 }
 
+/* ==========================================
+   PROMPT GENERATOR STYLES
+   ========================================== */
+
+/* Prompt Section */
+.prompt-section {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.prompt-section h2 {
+    margin-bottom: 1rem;
+}
+
+.prompt-section h2 span {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Wisdom Oracle */
+.wisdom-oracle-container {
+    text-align: center;
+    padding: 2rem;
+    background: radial-gradient(ellipse at center, rgba(124, 77, 255, 0.1), transparent);
+    border-radius: 20px;
+    border: 1px solid rgba(124, 77, 255, 0.3);
+}
+
+.wisdom-glyph {
+    font-size: 6rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+    animation: glyphPulse 3s ease-in-out infinite;
+}
+
+.wisdom-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--energy-cyan);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wisdom-details {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.wisdom-detail-item {
+    font-size: 0.9rem;
+    color: var(--divine-gold);
+}
+
+/* Sacred Button */
+.sacred-button {
+    background: linear-gradient(135deg, var(--primary-gold), var(--accent-purple));
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.sacred-button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+}
+
+.sacred-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.sacred-button span {
+    margin-right: 0.5rem;
+}
+
+/* Prompt Templates Grid */
+.prompt-templates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.prompt-template-card {
+    background: linear-gradient(135deg, rgba(26, 15, 46, 0.8), rgba(45, 27, 105, 0.6));
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.prompt-template-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--divine-gold);
+    box-shadow: var(--astral-glow);
+}
+
+.template-glyphs {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.template-name {
+    color: var(--divine-gold);
+    font-family: 'Cinzel', serif;
+    margin-bottom: 0.5rem;
+}
+
+.template-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.template-category {
+    font-size: 0.8rem;
+    color: var(--energy-cyan);
+    font-weight: 600;
+}
+
+/* Meditation Prompts Grid */
+.meditation-prompts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.meditation-card {
+    background: linear-gradient(135deg, rgba(26, 15, 46, 0.8), rgba(45, 27, 105, 0.6));
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    text-align: center;
+}
+
+.meditation-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--energy-cyan);
+    box-shadow: 0 8px 30px rgba(0, 229, 255, 0.3);
+}
+
+.meditation-glyphs {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+}
+
+.meditation-title {
+    color: var(--energy-cyan);
+    font-family: 'Cinzel', serif;
+    margin-bottom: 0.5rem;
+}
+
+.meditation-preview {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+}
+
+.meditation-action {
+    font-size: 0.8rem;
+    color: var(--divine-gold);
+    font-weight: 600;
+}
+
+/* Custom Prompt Builder */
+.prompt-builder {
+    background: linear-gradient(135deg, rgba(26, 15, 46, 0.6), rgba(45, 27, 105, 0.4));
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 215, 0, 0.15);
+}
+
+.glyph-selector h3,
+.prompt-type-selector h3 {
+    color: var(--divine-gold);
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Glyph Palette */
+.glyph-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.glyph-select-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.8rem;
+    background: rgba(26, 15, 46, 0.8);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glyph-select-btn:hover {
+    border-color: var(--divine-gold);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+.glyph-select-btn.selected {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(124, 77, 255, 0.3));
+    border-color: var(--divine-gold);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.selected-glyphs-display {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: rgba(26, 15, 46, 0.8);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    margin-bottom: 1.5rem;
+}
+
+.selected-glyphs-text {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.selected-glyphs-text.has-glyphs {
+    color: var(--divine-gold);
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.clear-btn {
+    background: rgba(255, 107, 107, 0.2);
+    border: 1px solid rgba(255, 107, 107, 0.5);
+    color: #ff6b6b;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.clear-btn:hover {
+    background: rgba(255, 107, 107, 0.4);
+}
+
+/* Prompt Type Options */
+.prompt-type-selector {
+    margin-bottom: 1.5rem;
+}
+
+.prompt-type-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.prompt-type-option {
+    cursor: pointer;
+}
+
+.prompt-type-option input {
+    display: none;
+}
+
+.option-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(26, 15, 46, 0.8);
+    border: 2px solid rgba(255, 215, 0, 0.2);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.prompt-type-option:hover .option-content {
+    border-color: var(--divine-gold);
+}
+
+.prompt-type-option input:checked + .option-content {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(124, 77, 255, 0.2));
+    border-color: var(--divine-gold);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.option-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.option-label {
+    font-family: 'Cinzel', serif;
+    color: var(--divine-gold);
+    font-weight: 600;
+}
+
+.option-desc {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+/* Generate Section */
+.generate-section {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.generate-btn {
+    font-size: 1.2rem;
+    padding: 1.2rem 2.5rem;
+}
+
+/* Generated Prompt Container */
+.generated-prompt-container {
+    background: linear-gradient(135deg, rgba(26, 15, 46, 0.9), rgba(45, 27, 105, 0.7));
+    border: 2px solid var(--divine-gold);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    animation: divineAppear 0.5s ease-out;
+}
+
+.generated-prompt-container h3 {
+    color: var(--divine-gold);
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.generated-prompt-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.generated-glyphs {
+    font-size: 2.5rem;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.prompt-type-badge {
+    background: linear-gradient(135deg, var(--primary-gold), var(--accent-purple));
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.generated-prompt-text {
+    background: rgba(26, 15, 46, 0.8);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    margin-bottom: 1.5rem;
+}
+
+.generated-prompt-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.action-btn {
+    background: rgba(255, 215, 0, 0.15);
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    color: var(--divine-gold);
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+}
+
+.action-btn:hover {
+    background: rgba(255, 215, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.action-btn span {
+    margin-right: 0.5rem;
+}
+
+/* Stream Creator */
+.stream-creator {
+    background: linear-gradient(135deg, rgba(26, 15, 46, 0.6), rgba(45, 27, 105, 0.4));
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 229, 255, 0.15);
+}
+
+.stream-input-group {
+    margin-bottom: 1.5rem;
+}
+
+.stream-input-group label {
+    display: block;
+    color: var(--energy-cyan);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.stream-input-group small {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.stream-input,
+.stream-textarea {
+    width: 100%;
+    background: rgba(26, 15, 46, 0.8);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 10px;
+    padding: 1rem;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.stream-input:focus,
+.stream-textarea:focus {
+    outline: none;
+    border-color: var(--energy-cyan);
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+}
+
+.stream-textarea {
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.custom-stream-result {
+    background: linear-gradient(135deg, rgba(26, 15, 46, 0.9), rgba(45, 27, 105, 0.7));
+    border: 2px solid var(--energy-cyan);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    animation: divineAppear 0.5s ease-out;
+    text-align: center;
+}
+
+.custom-stream-result h4 {
+    color: var(--energy-cyan);
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+}
+
+.stream-preview {
+    background: rgba(26, 15, 46, 0.8);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    margin-bottom: 1rem;
+}
+
+/* Prompt Info Box */
+.prompt-info-box {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(124, 77, 255, 0.1));
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 20px;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+}
+
+.prompt-info-box ul li {
+    padding: 0.5rem 0;
+    color: var(--text-secondary);
+}
+
+.prompt-info-box ul li strong {
+    color: var(--text-primary);
+}
+
+/* Modal Styles */
+.mystical-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mystical-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mystical-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 5, 20, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.mystical-modal-body {
+    position: relative;
+    background: linear-gradient(135deg, rgba(26, 15, 46, 0.98), rgba(45, 27, 105, 0.95));
+    border: 2px solid var(--divine-gold);
+    border-radius: 25px;
+    padding: 2.5rem;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.2);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.mystical-modal.active .mystical-modal-body {
+    transform: scale(1);
+}
+
+.meditation-modal-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.meditation-modal-glyphs {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+}
+
+.meditation-modal-header h2 {
+    color: var(--divine-gold);
+    font-family: 'Cinzel', serif;
+}
+
+.meditation-prompt-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--energy-cyan);
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(26, 15, 46, 0.6);
+    border-radius: 15px;
+    border-left: 4px solid var(--energy-cyan);
+}
+
+.meditation-questions {
+    margin-bottom: 1.5rem;
+}
+
+.meditation-questions h4 {
+    color: var(--sacred-amber);
+    margin-bottom: 0.75rem;
+}
+
+.meditation-questions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.meditation-questions li {
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 10px;
+    border-left: 3px solid var(--divine-gold);
+    color: var(--text-primary);
+}
+
+.meditation-modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.close-btn {
+    background: rgba(255, 107, 107, 0.2);
+    border-color: rgba(255, 107, 107, 0.5);
+    color: #ff6b6b;
+}
+
+.close-btn:hover {
+    background: rgba(255, 107, 107, 0.4);
+}
+
+/* Responsive adjustments for prompts */
+@media (max-width: 768px) {
+    .prompt-templates-grid,
+    .meditation-prompts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .glyph-select-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+    }
+
+    .prompt-type-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .generated-prompt-actions {
+        flex-direction: column;
+    }
+
+    .wisdom-glyph {
+        font-size: 4rem;
+    }
+
+    .mystical-modal-body {
+        padding: 1.5rem;
+    }
+}
+
 /* Print Styles */
 @media print {
     body {
         background: white;
         color: black;
     }
-    
+
     .tabs,
     .filter-controls,
     #copy-notification,
     .shortcuts-help {
         display: none;
     }
-    
+
     .glyph-card,
     .stream-card {
         break-inside: avoid;
